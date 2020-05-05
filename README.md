@@ -7,6 +7,7 @@ We are proud to present you this publication catalogue that gathers all publishe
 This repository contains two major files:
 
 (1) A spreadsheet with basic information of each paper included in the catalogue.
+
 (2) A .ris file containing the full references of all papers included in the catalogue.
 
 This catalogue is related to the **plant-pollinator database** developed by [REBIPP](https://www.rebipp.org.br).
