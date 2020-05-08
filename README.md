@@ -13,7 +13,7 @@ This repository contains two major files:
 This catalogue is related to the **plant-pollinator database** developed by [REBIPP](https://www.rebipp.org.br) :brazil:
 
 
-## License information
+## Terms of use
 
 This information is provided under a Creative Commons BY-SA license. Therefore, you may freely use this data catalogue, but you must (i) give the appropriate credit to the authors by citing this repository and its doi, and (ii) if you transform, remix, or build upon this data, the resulting dataset should be shared under the same license conditions.
 
