@@ -11,3 +11,5 @@ This repository contains two major files:
 (2) A .ris file containing the full references of all papers included in the catalogue :desktop_computer:
 
 This catalogue is related to the **plant-pollinator database** developed by [REBIPP](https://www.rebipp.org.br) :brazil:
+
+![license](images/license.png)
