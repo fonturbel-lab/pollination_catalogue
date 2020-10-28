@@ -5,7 +5,6 @@ date: ''
 output:
   html_document:
     df_print: paged
-  pdf_document: default
 bibliography: References.bib
 csl: arees.csl
 ---
