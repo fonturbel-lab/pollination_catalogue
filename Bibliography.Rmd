@@ -1,15 +1,15 @@
 ---
 title: "Bibliography"
-author: ""
-date: ""
+author: ''
+date: ''
 output:
+  html_document:
+    df_print: paged
   pdf_document: default
 bibliography: References.bib
 csl: arees.csl
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-\nocite{*}
+---
+nocite: '@*'
+---
