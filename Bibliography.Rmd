@@ -1,0 +1,14 @@
+---
+title: "Bibliography"
+author: "Francisco E. Fonturbel"
+date: "10/28/2020"
+output: html_document
+bibliography: References.bib
+csl: arees.csl
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+\nocite{*}
