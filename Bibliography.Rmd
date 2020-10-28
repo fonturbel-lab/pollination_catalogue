@@ -1,8 +1,9 @@
 ---
 title: "Bibliography"
-author: "Francisco E. Fonturbel"
-date: "10/28/2020"
-output: html_document
+author: ""
+date: ""
+output:
+  pdf_document: default
 bibliography: References.bib
 csl: arees.csl
 ---
