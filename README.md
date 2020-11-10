@@ -1,8 +1,8 @@
 # Pollination catalogue :hibiscus: :honeybee:
 
-## A catalogue of papers on pollination for Chile :chile:
+## Publication catalogue on pollination for Chile :chile:
 
-**A development of the SURPASS project**
+**A development of the [SURPASS2](https://bee-surpass.org) project**
 
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
