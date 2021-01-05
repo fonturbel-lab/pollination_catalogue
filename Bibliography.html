@@ -1479,45 +1479,6 @@ window.onload = function() {
   PagedTableDoc.initAll();
 };
 </script>
-<style type="text/css">
-a.anchor-section {margin-left: 10px; visibility: hidden; color: inherit;}
-a.anchor-section::before {content: '#';}
-.hasAnchor:hover a.anchor-section {visibility: visible;}
-</style>
-<script>// Anchor sections v1.0 written by Atsushi Yasumoto on Oct 3rd, 2020.
-document.addEventListener('DOMContentLoaded', function() {
-  // Do nothing if AnchorJS is used
-  if (typeof window.anchors === 'object' && anchors.hasOwnProperty('hasAnchorJSLink')) {
-    return;
-  }
-
-  const h = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
-
-  // Do nothing if sections are already anchored
-  if (Array.from(h).some(x => x.classList.contains('hasAnchor'))) {
-    return null;
-  }
-
-  // Use section id when pandoc runs with --section-divs
-  const section_id = function(x) {
-    return ((x.classList.contains('section') || (x.tagName === 'SECTION'))
-            ? x.id : '');
-  };
-
-  // Add anchors
-  h.forEach(function(x) {
-    const id = x.id || section_id(x.parentElement);
-    if (id === '') {
-      return null;
-    }
-    let anchor = document.createElement('a');
-    anchor.href = '#' + id;
-    anchor.classList = ['anchor-section'];
-    x.classList.add('hasAnchor');
-    x.appendChild(anchor);
-  });
-});
-</script>
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -1572,6 +1533,7 @@ h6 {
   text-align: left;
 }
 </style>
+
 
 
 
@@ -1688,13 +1650,13 @@ summary {
 
 <div id="refs" class="references">
 <div id="ref-bernardello_survey_2001">
-<p>1. Bernardello G, Anderson GJ, Stuessy TF, Crawford DJ. 2001. A survey of floral traits, breeding systems, floral visitors, and pollination systems of the angiosperms of the juan fernández islands (chile). <em>The Botanical Review</em>. 67(3):255–308</p>
+<p>1. Bernardello G, Anderson GJ, Stuessy TF, Crawford DJ. 2001. A survey of floral traits, breeding systems, floral visitors, and pollination systems of the angiosperms of the juan fernandez islands (chile). <em>The Botanical Review</em>. 67(3):255–308</p>
 </div>
 <div id="ref-lehnebach_pollination_2003">
 <p>2. Lehnebach C, Riveros M. 2003. Pollination biology of the chilean endemic orchid <em>chloraea lamellata</em>. <em>Biodiversity &amp; Conservation</em>. 12(8):1741–51</p>
 </div>
 <div id="ref-anderson_breeding_2001">
-<p>3. Anderson GJ, Bernardello G, Stuessy TF, Crawford DJ. 2001. Breeding system and pollination of selected plants endemic to juan fernández islands. <em>American Journal of Botany</em>. 88(2):220–33</p>
+<p>3. Anderson GJ, Bernardello G, Stuessy TF, Crawford DJ. 2001. Breeding system and pollination of selected plants endemic to juan fernandez islands. <em>American Journal of Botany</em>. 88(2):220–33</p>
 </div>
 <div id="ref-munoz_sharing_2019">
 <p>4. Muñoz AA, Cavieres LA. 2019. Sharing of pollinators between the invasive taraxacum officinale and co-flowering natives is not related to floral similarity in the high-andes. <em>Flora</em>. 261:151491</p>
@@ -1706,10 +1668,10 @@ summary {
 <p>6. Aizen MA, Ezcurra C. 1998. High incidence of plant-animal mutualisms in the woody flora of the temperate forest of southern south america: Biogeographical origin and present ecological significance. <em>Ecologia Austral</em>. 8:217–36</p>
 </div>
 <div id="ref-aizen_historia_2002">
-<p>7. Aizen MA, Vázquez DP, Smith-Ramírez C. 2002. Historia natural y conservación de los mutualismos planta-animal del bosque templado de sudamérica austral. <em>Revista Chilena de Historia Natural</em>. 75(1):79–97</p>
+<p>7. Aizen MA, Vazquez DP, Smith-Ramirez C. 2002. Historia natural y conservacion de los mutualismos planta-animal del bosque templado de sudamerica austral. <em>Revista Chilena de Historia Natural</em>. 75(1):79–97</p>
 </div>
 <div id="ref-aizen_coordinated_2018">
-<p>8. Aizen MA, Smith‐Ramírez C, Morales CL, Vieli L, Sáez A, et al. 2018. Coordinated species importation policies are needed to reduce serious invasions globally: The case of alien bumblebees in south america. <em>Journal of Applied Ecology</em>. 56(1):100–106</p>
+<p>8. Aizen MA, Smith‐Ramirez C, Morales CL, Vieli L, Sáez A, et al. 2018. Coordinated species importation policies are needed to reduce serious invasions globally: The case of alien bumblebees in south america. <em>Journal of Applied Ecology</em>. 56(1):100–106</p>
 </div>
 <div id="ref-amico_phylogenetic_2007">
 <p>9. Amico GC, Vidal-Russell R, Nickrent DL. 2007. Phylogenetic relationships and ecological speciation in the mistletoe <em>tristerix</em> (loranthaceae): The influence of pollinators, dispersers, and hosts. <em>American Journal of Botany</em>. 94(4):558–67</p>
@@ -1718,28 +1680,28 @@ summary {
 <p>10. Anderson GJ, Bernardello G, Lopez PS, Crawford DJ, Stuessy TF. 2000. Reproductive biology of <em>wahlenbergia</em> (campanulaceae) endemic to robinson crusoe island (chile). <em>Plant Systematics and Evolution</em>. 223(1-2):109–23</p>
 </div>
 <div id="ref-araneda_nutritional_2015">
-<p>11. Araneda X, Caniullan R, Catalán C, Martínez M, Morales D, Rodríguez M. 2015. Nutritional contribution of pollen from species pollinated by bees (<em>apis mellifera</em> l.) in the araucanía region of chile. <em>Revista de la Facultad de Ciencias Agrarias</em>. 47(1):139–44</p>
+<p>11. Araneda X, Caniullan R, Catalan C, Martinez M, Morales D, Rodriguez M. 2015. Nutritional contribution of pollen from species pollinated by bees (<em>apis mellifera</em> l.) in the araucania region of chile. <em>Revista de la Facultad de Ciencias Agrarias</em>. 47(1):139–44</p>
 </div>
 <div id="ref-araneda_duran_evaluation_2010">
-<p>12. Araneda Durán X, Breve Ulloa R, Aguilera Carrillo J, Lavín Contreras J, Toneatti Bastidas M. 2010. Evaluation of yield component traits of honeybee-pollinated (<em>apis mellifera</em> l.) rapeseed canola (<em>brassica napus</em> l.). <em>Chilean journal of agricultural research</em>. 70(2):309–14</p>
+<p>12. Araneda Duran X, Breve Ulloa R, Aguilera Carrillo J, Lavin Contreras J, Toneatti Bastidas M. 2010. Evaluation of yield component traits of honeybee-pollinated (<em>apis mellifera</em> l.) rapeseed canola (<em>brassica napus</em> l.). <em>Chilean journal of agricultural research</em>. 70(2):309–14</p>
 </div>
 <div id="ref-arismendi_molecular_2016">
 <p>13. Arismendi N, Bruna A, Zapata N, Vargas M. 2016. Molecular detection of the tracheal mite <em>locustacarus buchneri</em> in native and non-native bumble bees in chile. <em>Insectes Sociaux</em>. 63(4):629–33</p>
 </div>
 <div id="ref-wirth_old-growth_2009">
-<p>14. Armesto JJ, Smith-Ramírez C, Carmona MR, Celis-Diez JL, Díaz IA, et al. 2009. Old-growth temperate rainforests of south america: Conservation, plant–animal interactions, and baseline biogeochemical processes. In <em>Old-Growth Forests</em>, ed C Wirth, G Gleixner, M Heimann, pp. 367–90. Berlin, Heidelberg: Springer Berlin Heidelberg. pp. ed.</p>
+<p>14. Armesto JJ, Smith-Ramirez C, Carmona MR, Celis-Diez JL, Díaz IA, et al. 2009. Old-growth temperate rainforests of south america: Conservation, plant–animal interactions, and baseline biogeochemical processes. In <em>Old-Growth Forests</em>, ed C Wirth, G Gleixner, M Heimann, pp. 367–90. Berlin, Heidelberg: Springer Berlin Heidelberg. pp. ed.</p>
 </div>
 <div id="ref-arretz_introduction_1986">
 <p>15. Arretz PV, Macfarlane RP. 1986. The introduction of <em>bombus ruderatus</em> to chile for red clover pollination. <em>Bee World</em>. 67(1):15–22</p>
 </div>
 <div id="ref-arroyo_tendencias_1983">
-<p>16. Arroyo MTK, Armesto JJ, Primak R. 1983. Tendencias altitudinales y latitudinales en mecanismos de polinización en la zona andina de los andes templados de sudamérica. <em>Revista Chilena de Historia Natural</em>. 56:159–80</p>
+<p>16. Arroyo MTK, Armesto JJ, Primak R. 1983. Tendencias altitudinales y latitudinales en mecanismos de polinización en la zona andina de los andes templados de sudamerica. <em>Revista Chilena de Historia Natural</em>. 56:159–80</p>
 </div>
 <div id="ref-arroyo_functional_2017">
 <p>17. Arroyo MTK, Pacheco DA, Dudley LS. 2017. Functional role of long-lived flowers in preventing pollen limitation in a high elevation outcrossing species. <em>AoB Plants</em>. 9(6):plx050</p>
 </div>
 <div id="ref-arroyo_ovule_2019">
-<p>18. Arroyo MTK, Pérez F, Jara-Arancio P, Pacheco D, Vidal P, Flores MF. 2019. Ovule bet-hedging at high elevation in the south american andes: Evidence from a phylogenetically controlled multispecies study. <em>Journal of Ecology</em>. 107(2):668–83</p>
+<p>18. Arroyo MTK, Perez F, Jara-Arancio P, Pacheco D, Vidal P, Flores MF. 2019. Ovule bet-hedging at high elevation in the south american andes: Evidence from a phylogenetically controlled multispecies study. <em>Journal of Ecology</em>. 107(2):668–83</p>
 </div>
 <div id="ref-belmonte_floral_1994">
 <p>19. Belmonte E, Cardemil L, Arroyo MTK. 1994. Floral nectary structure and nectar composition in <em>eccremocarpus scaber</em> (bignoniaceae), a hummingbird-pollinated plant of central chile. <em>American Journal of Botany</em>. 81(4):493</p>
@@ -1751,67 +1713,67 @@ summary {
 <p>21. Bernardello G, Aguilar R, Anderson GJ. 2004. The reproductive biology of <em>sophora fernandeziana</em> (leguminosae), a vulnerable endemic species from isla robinson crusoe. <em>American Journal of Botany</em>. 91(2):198–206</p>
 </div>
 <div id="ref-candia_indirect_2014">
-<p>22. Candia AB, Medel R, Fontúrbel FE. 2014. Indirect positive effects of a parasitic plant on host pollination and seed dispersal. <em>Oikos</em>. 123(11):1371–6</p>
+<p>22. Candia AB, Medel R, Fonturbel FE. 2014. Indirect positive effects of a parasitic plant on host pollination and seed dispersal. <em>Oikos</em>. 123(11):1371–6</p>
 </div>
 <div id="ref-cepeda-pizarro_efecto_2015">
-<p>23. Cepeda-Pizarro J, Pola P. M, González CR. 2015. Efecto de la fase fenológica de verano sobre algunas características del ensamble de diptera registrado en una vega altoandina del desierto transicional de chile. <em>Idesia (Arica)</em>. 33(1):49–58</p>
+<p>23. Cepeda-Pizarro J, Pola P. M, Gonzalez CR. 2015. Efecto de la fase fenologica de verano sobre algunas caracteristicas del ensamble de diptera registrado en una vega altoandina del desierto transicional de chile. <em>Idesia (Arica)</em>. 33(1):49–58</p>
 </div>
 <div id="ref-chalcoff_erosion_2012">
 <p>24. Chalcoff VR, Aizen MA, Ezcurra C. 2012. Erosion of a pollination mutualism along an environmental gradient in a south andean treelet, <em>embothrium coccineum</em> (proteaceae). <em>Oikos</em>. 121(3):471–80</p>
 </div>
 <div id="ref-chetelat_distribution_2009">
-<p>25. Chetelat RT, Pertuzé RA, Faúndez L, Graham EB, Jones CM. 2009. Distribution, ecology and reproductive biology of wild tomatoes and related nightshades from the atacama desert region of northern chile. <em>Euphytica</em>. 167(1):77–93</p>
+<p>25. Chetelat RT, Pertuze RA, Faundez L, Graham EB, Jones CM. 2009. Distribution, ecology and reproductive biology of wild tomatoes and related nightshades from the atacama desert region of northern chile. <em>Euphytica</em>. 167(1):77–93</p>
 </div>
 <div id="ref-cisterna_contrasting_2018">
-<p>26. Cisterna J, Murúa M. 2018. Contrasting floral morphology and breeding systems in two subspecies of &lt;I&gt;Calceolaria corymbosa&lt;/i&gt; in central chile. <em>Gayana Botánica</em>. 75(1):544–48</p>
+<p>26. Cisterna J, Murua M. 2018. Contrasting floral morphology and breeding systems in two subspecies of &lt;I&gt;Calceolaria corymbosa&lt;/i&gt; in central chile. <em>Gayana Botanica</em>. 75(1):544–48</p>
 </div>
 <div id="ref-cuartas-dominguez_sistema_2017">
-<p>27. Cuartas-Domínguez M, Rojas-Céspedes A, Jara-Arancio P, Arroyo MTK. 2017. Sistema reproductivo de <em>trichopetalum plumosum</em> (ruiz &amp;amp; pav.) j.f. Macbr. (Asparagaceae), geófita endémica de chile. <em>Gayana Botanica</em>. 74(1):73–81</p>
+<p>27. Cuartas-Domínguez M, Rojas-Céspedes A, Jara-Arancio P, Arroyo MTK. 2017. Sistema reproductivo de <em>trichopetalum plumosum</em> (ruiz &amp;amp; pav.) j.f. Macbr. (Asparagaceae), geofita endemica de chile. <em>Gayana Botanica</em>. 74(1):73–81</p>
 </div>
 <div id="ref-diaz_linking_2005">
-<p>28. Díaz IA, Armesto JJ, Reid S, Sieving KE, Willson MF. 2005. Linking forest structure and composition: Avian diversity in successional forests of chiloé island, chile. <em>Biological Conservation</em>. 123(1):91–101</p>
+<p>28. Diaz IA, Armesto JJ, Reid S, Sieving KE, Willson MF. 2005. Linking forest structure and composition: Avian diversity in successional forests of chiloe island, chile. <em>Biological Conservation</em>. 123(1):91–101</p>
 </div>
 <div id="ref-diaz-forestier_nectary_2016">
-<p>29. Díaz-Forestier J, Gómez M, Celis-Diez JL, Montenegro G. 2016. Nectary structure in four melliferous plant species native to chile. <em>Flora</em>. 221:100–106</p>
+<p>29. Diaz-Forestier J, Gomez M, Celis-Diez JL, Montenegro G. 2016. Nectary structure in four melliferous plant species native to chile. <em>Flora</em>. 221:100–106</p>
 </div>
 <div id="ref-espindola_relationship_2019">
-<p>30. Espíndola A, Pliscoff P. 2019. The relationship between pollinator visits and climatic suitabilities in specialized pollination interactions. <em>Annals of the Entomological Society of America</em>. 112(3):150–57</p>
+<p>30. Espindola A, Pliscoff P. 2019. The relationship between pollinator visits and climatic suitabilities in specialized pollination interactions. <em>Annals of the Entomological Society of America</em>. 112(3):150–57</p>
 </div>
 <div id="ref-estay_p_evaluacion_2001">
-<p>31. Estay P. P, Wagner V. A, Escaff G. M. 2001. Evaluación de <em>bombus dahlbomii</em> (guér.) como agente polinizador de flores de tomate (<em>lycopersicon esculentum</em> (mill)), bajo condiciones de invernadero. <em>Agricultura Técnica</em>. 61(2):113–19</p>
+<p>31. Estay P. P, Wagner V. A, Escaff G. M. 2001. Evaluacion de <em>bombus dahlbomii</em> (guer.) como agente polinizador de flores de tomate (<em>lycopersicon esculentum</em> (mill)), bajo condiciones de invernadero. <em>Agricultura Tecnica</em>. 61(2):113–19</p>
 </div>
 <div id="ref-fao_estado_2017">
-<p>32. FAO F and AO of the UN. 2017. Estado del arte del servicio ecosistémico de la polinización en chile-paraguay y peru. FAO, Santiago, Chile</p>
+<p>32. FAO F and AO of the UN. 2017. Estado del arte del servicio ecosistemico de la polinizacion en chile-paraguay y peru. FAO, Santiago, Chile</p>
 </div>
 <div id="ref-fao_linea_2016">
-<p>33. FAO F and AO of the UN. 2016. Línea base del servicio ecosistémico de la polinización en chile: Documento de síntesis. <em>I6663ES/1/12.16</em>, Santiago, Chile</p>
+<p>33. FAO F and AO of the UN. 2016. Linea base del servicio ecosistemico de la polinización en chile: Documento de sintesis. <em>I6663ES/1/12.16</em>, Santiago, Chile</p>
 </div>
 <div id="ref-farji-brener_successful_1998">
 <p>34. Farji-Brener AG, Corley JC. 1998. Successful invasions of hymenopteran insects into nw patagonia. <em>Ecologia Austral</em>. 8:237–49</p>
 </div>
 <div id="ref-fonturbel_scale-dependent_2015">
-<p>35. Fontúrbel FE, Jordano P, Medel R. 2015. Scale-dependent responses of pollination and seed dispersal mutualisms in a habitat transformation scenario. <em>Journal of Ecology</em>. 103(5):1334–43</p>
+<p>35. Fonturbel FE, Jordano P, Medel R. 2015. Scale-dependent responses of pollination and seed dispersal mutualisms in a habitat transformation scenario. <em>Journal of Ecology</em>. 103(5):1334–43</p>
 </div>
 <div id="ref-fonturbel_plant-animal_2017">
-<p>36. Fontúrbel FE, Jordano P, Medel R. 2017. Plant-animal mutualism effectiveness in native and transformed habitats: Assessing the coupled outcomes of pollination and seed dispersal. <em>Perspectives in Plant Ecology, Evolution and Systematics</em>. 28:87–95</p>
+<p>36. Fonturbel FE, Jordano P, Medel R. 2017. Plant-animal mutualism effectiveness in native and transformed habitats: Assessing the coupled outcomes of pollination and seed dispersal. <em>Perspectives in Plant Ecology, Evolution and Systematics</em>. 28:87–95</p>
 </div>
 <div id="ref-fonturbel_increased_2017">
-<p>37. Fontúrbel FE, Salazar DA, Medel R. 2017. Increased resource availability prevents the disruption of key ecological interactions in disturbed habitats. <em>Ecosphere</em>. 8(4):e01768</p>
+<p>37. Fonturbel FE, Salazar DA, Medel R. 2017. Increased resource availability prevents the disruption of key ecological interactions in disturbed habitats. <em>Ecosphere</em>. 8(4):e01768</p>
 </div>
 <div id="ref-gomez_p_pollination_2012">
-<p>38. Gómez P P, Lillo D, González AV. 2012. Pollination and breeding system in <em>adesmia bijuga</em> phil. (Fabaceae), a critically endangered species in central chile. <em>Gayana Botánica</em>. 69(2):286–95</p>
+<p>38. Gomez P P, Lillo D, González AV. 2012. Pollination and breeding system in <em>adesmia bijuga</em> phil. (Fabaceae), a critically endangered species in central chile. <em>Gayana Botanica</em>. 69(2):286–95</p>
 </div>
 <div id="ref-gonzalez_is_2019">
-<p>39. González AV, González-Browne C, Salinas P, Murúa M. 2019. Is there spatial variation in phenotypic selection on floral traits in a generalist plant–pollinator system? <em>Evolutionary Ecology</em>. 33(5):687–700</p>
+<p>39. Gonzalez AV, Gonzalez-Browne C, Salinas P, Murua M. 2019. Is there spatial variation in phenotypic selection on floral traits in a generalist plant–pollinator system? <em>Evolutionary Ecology</em>. 33(5):687–700</p>
 </div>
 <div id="ref-gonzalez-gomez_is_2009">
-<p>40. González-Gómez PL, Estades CF. 2009. Is natural selection promoting sexual dimorphism in the green-backed firecrown hummingbird (<em>sephanoides sephaniodes</em>)? <em>Journal of Ornithology</em>. 150(2):351–56</p>
+<p>40. Gonzalez-Gomez PL, Estades CF. 2009. Is natural selection promoting sexual dimorphism in the green-backed firecrown hummingbird (<em>sephanoides sephaniodes</em>)? <em>Journal of Ornithology</em>. 150(2):351–56</p>
 </div>
 <div id="ref-gonzalez-vaquero_antennal_2016">
-<p>41. González-Vaquero RA, Galvani GL. 2016. Antennal sensilla analyses as useful tools in the revision of the sweat-bee subgenus <em>corynura</em> (<em>callistochlora</em>) michener (hymenoptera: Halictidae). <em>Zoologischer Anzeiger - A Journal of Comparative Zoology</em>. 262:29–42</p>
+<p>41. Gonzalez-Vaquero RA, Galvani GL. 2016. Antennal sensilla analyses as useful tools in the revision of the sweat-bee subgenus <em>corynura</em> (<em>callistochlora</em>) michener (hymenoptera: Halictidae). <em>Zoologischer Anzeiger - A Journal of Comparative Zoology</em>. 262:29–42</p>
 </div>
 <div id="ref-gonzalez-vaquero_dna_2016">
-<p>42. González-Vaquero RA, Roig-Alsina A, Packer L. 2016. DNA barcoding as a useful tool in the systematic study of wild bees of the tribe augochlorini (hymenoptera: Halictidae). <em>Genome</em>. 59(10):889–98</p>
+<p>42. Gonzalez-Vaquero RA, Roig-Alsina A, Packer L. 2016. DNA barcoding as a useful tool in the systematic study of wild bees of the tribe augochlorini (hymenoptera: Halictidae). <em>Genome</em>. 59(10):889–98</p>
 </div>
 <div id="ref-guerrero_ecology_2012">
 <p>43. Guerrero PC, Carvallo GO, Nassar JM, Rojas-Sandoval J, Sanz V, Medel R. 2012. Ecology and evolution of negative and positive interactions in cactaceae: Lessons and pending tasks. <em>Plant Ecology &amp; Diversity</em>. 5(2):205–15</p>
@@ -1820,10 +1782,10 @@ summary {
 <p>44. Guerrero PC, Antinao CA, Vergara-Meriño B, Villagra CA, Carvallo GO. 2019. Bees may drive the reproduction of four sympatric cacti in a vanishing coastal mediterranean-type ecosystem. <em>PeerJ</em>. 7:e7865</p>
 </div>
 <div id="ref-lopez-sepulveda_biogeography_2017">
-<p>45. López-Sepúlveda P, Takayama K, Crawford DJ, Greimler J, Peñailillo P, et al. 2017. Biogeography and genetic consequences of anagenetic speciation of <em>r.</em> <em>Haphithamnus venustus</em> (verbenaceae) in the juan fernández archipelago, chile: Insights from aflp and ssr markers. <em>Plant Species Biology</em>. 32(3):223–37</p>
+<p>45. Lopez-Sepulveda P, Takayama K, Crawford DJ, Greimler J, Peñailillo P, et al. 2017. Biogeography and genetic consequences of anagenetic speciation of <em>r.</em> <em>Haphithamnus venustus</em> (verbenaceae) in the juan fernandez archipelago, chile: Insights from aflp and ssr markers. <em>Plant Species Biology</em>. 32(3):223–37</p>
 </div>
 <div id="ref-magrach_effects_2012">
-<p>46. Magrach A, Larrinaga AR, Santamaría L. 2012. Effects of matrix characteristics and interpatch distance on functional connectivity in fragmented temperate rainforests: Matrix and distance affect functional connectivity. <em>Conservation Biology</em>. 26(2):238–47</p>
+<p>46. Magrach A, Larrinaga AR, Santamaria L. 2012. Effects of matrix characteristics and interpatch distance on functional connectivity in fragmented temperate rainforests: Matrix and distance affect functional connectivity. <em>Conservation Biology</em>. 26(2):238–47</p>
 </div>
 <div id="ref-mansur_self-incompatibility_2004">
 <p>47. Mansur L, Gonzalez M, Rojas I, Salas P. 2004. Self-incompatibility in the chilean endemic genus <em>leucocoryne</em> lindley. <em>Journal of the American Society for Horticultural Science</em>. 129(6):836–38</p>
@@ -1838,10 +1800,10 @@ summary {
 <p>50. Medan D, D’Ambrogio AC. 1998. Reproductive biology of the andromonoecious shrub <em>trevoa quinquenervia</em> (rhamnaceae). <em>Botanical Journal of the Linnean Society</em>. 126(3):191–206</p>
 </div>
 <div id="ref-medel_pollination_2018">
-<p>51. Medel R, González-Browne C, Fontúrbel FE. 2018. Pollination in the chilean mediterranean-type ecosystem: A review of current advances and pending tasks. <em>Plant Biology</em>. 20:89–99</p>
+<p>51. Medel R, Gonzalez-Browne C, Fonturbel FE. 2018. Pollination in the chilean mediterranean-type ecosystem: A review of current advances and pending tasks. <em>Plant Biology</em>. 20:89–99</p>
 </div>
 <div id="ref-miranda_villalon_determinacion_2002">
-<p>52. Miranda Villalón JM. 2002. <em>Determinación de la viabilidad en la carga polínica de insectos, que visitan flores de avellano chileno (<span style="font-style:normal;">Gevuina avellana</span> Mol.)</em>. Undergraduate thesis. Universidad Austral de Chile. pp.</p>
+<p>52. Miranda Villalon JM. 2002. <em>Determinacion de la viabilidad en la carga polínica de insectos, que visitan flores de avellano chileno (<span style="font-style:normal;">Gevuina avellana</span> Mol)</em>. Undergraduate thesis. Universidad Austral de Chile. pp.</p>
 </div>
 <div id="ref-montalva_geographic_2011">
 <p>53. Montalva J, Dudley L, Arroyo MTK, Retamales H, Abrahamovich AH. 2011. Geographic distribution and associated flora of native and introduced bumble bees (<em>bombus</em> spp.) in chile. <em>Journal of Apicultural Research</em>. 50(1):11–21</p>
@@ -1850,34 +1812,34 @@ summary {
 <p>54. Montalva J, Sepulveda V, Vivallo F, Silva DP. 2017. New records of an invasive bumble bee in northern chile: Expansion of its range or new introduction events? <em>Journal of Insect Conservation</em>. 21(4):657–66</p>
 </div>
 <div id="ref-murua_pollination_2015">
-<p>55. Murúa M, Espíndola A. 2015. Pollination syndromes in a specialised plant-pollinator interaction: Does floral morphology predict pollinators in <em>calceolaria</em> ? <em>Plant Biology</em>. 17(2):551–57</p>
+<p>55. Murua M, Espindola A. 2015. Pollination syndromes in a specialised plant-pollinator interaction: Does floral morphology predict pollinators in <em>calceolaria</em> ? <em>Plant Biology</em>. 17(2):551–57</p>
 </div>
 <div id="ref-murua_changes_2011">
-<p>56. Murúa M, Grez AA, Simonetti JA. 2011. Changes in wing length in the pollinator <em>bombus dahlbomii</em> occurring with the fragmentation of the maulino forest, chile. <em>Ciencia e investigación agraria</em>. 38(3):391–96</p>
+<p>56. Murua M, Grez AA, Simonetti JA. 2011. Changes in wing length in the pollinator <em>bombus dahlbomii</em> occurring with the fragmentation of the maulino forest, chile. <em>Ciencia e investigación agraria</em>. 38(3):391–96</p>
 </div>
 <div id="ref-murua_pollinators_2017">
-<p>57. Murúa M, Espíndola A, González A, Medel R. 2017. Pollinators and crossability as reproductive isolation barriers in two sympatric oil-rewarding <em>calceolaria</em> (calceolariaceae) species. <em>Evolutionary Ecology</em>. 31(4):421–34</p>
+<p>57. Murua M, Espindola A, Gonzalez A, Medel R. 2017. Pollinators and crossability as reproductive isolation barriers in two sympatric oil-rewarding <em>calceolaria</em> (calceolariaceae) species. <em>Evolutionary Ecology</em>. 31(4):421–34</p>
 </div>
 <div id="ref-murua_is_2019">
-<p>58. Murúa M, Ramírez MJ, González A. 2019. Is the same pollinator species equally effective in different populations of the generalist herb <em>alstroemeria ligtu var. Simsii</em>? <em>Gayana Botánica</em>. 76(1):109–14</p>
+<p>58. Murua M, Ramırez MJ, Gonzalez A. 2019. Is the same pollinator species equally effective in different populations of the generalist herb <em>alstroemeria ligtu var. Simsii</em>? <em>Gayana Botanica</em>. 76(1):109–14</p>
 </div>
 <div id="ref-pantoja_determination_2017">
-<p>59. Pantoja G, Gómez M, Contreras C, Grimau L, Ramírez Quirama JF, Montenegro G. 2017. Determination of suitable zones for apitourism using multi-criteria evaluation in geographic information systems: A case study in the o’Higgins region, chile. <em>Ciencia e investigación agraria</em>. 44(2):139–53</p>
+<p>59. Pantoja G, Gomez M, Contreras C, Grimau L, Ramirez Quirama JF, Montenegro G. 2017. Determination of suitable zones for apitourism using multi-criteria evaluation in geographic information systems: A case study in the o’Higgins region, chile. <em>Ciencia e Investigacion Agraria</em>. 44(2):139–53</p>
 </div>
 <div id="ref-polidori_comparative_2015">
 <p>60. Polidori C, Nieves-Aldrey JL. 2015. Comparative flight morphology in queens of invasive and native patagonian bumblebees (hymenoptera: Bombus). <em>Comptes Rendus Biologies</em>. 338(2):126–33</p>
 </div>
 <div id="ref-ramos-jiliberto_network_2009">
-<p>61. Ramos-Jiliberto R, Albornoz AA, Valdovinos FS, Smith-Ramírez C, Arim M, et al. 2009. A network analysis of plant–pollinator interactions in temperate rain forests of chiloé island, chile. <em>Oecologia</em>. 160(4):697–706</p>
+<p>61. Ramos-Jiliberto R, Albornoz AA, Valdovinos FS, Smith-Ramirez C, Arim M, et al. 2009. A network analysis of plant–pollinator interactions in temperate rain forests of chiloe island, chile. <em>Oecologia</em>. 160(4):697–706</p>
 </div>
 <div id="ref-rebolledo_r_actividad_2004">
-<p>62. Rebolledo R. R, Martínez P. H, Palma M. R, Aguilera P A, Klein K. C. 2004. Actividad de visita de <em>bombus dahlbomi</em> (guérin) y <em>bombus ruderatus</em> (f.) (hymenoptera:Apidae) sobre trébol rosado (<em>trifolium pratense</em> l.) en la ix región de la la araucanía, chile. <em>Agricultura Técnica</em>. 64(3):</p>
+<p>62. Rebolledo R. R, Martinez P. H, Palma M. R, Aguilera P A, Klein K. C. 2004. Actividad de visita de <em>bombus dahlbomi</em> (guérin) y <em>bombus ruderatus</em> (f.) (hymenoptera:Apidae) sobre trébol rosado (<em>trifolium pratense</em> l.) en la ix region de la la araucania, chile. <em>Agricultura Tecnica</em>. 64(3):</p>
 </div>
-<div id="ref-rivera-hutinel_biologifloral_2017">
-<p>63. Rivera-Hutinel A, Acevedo-Orellana F. 2017. Biología floral y reproductiva de <em>escallonia pulverulenta</em> (ruiz et pav.) pers. (Escalloniaceae) y su relación con los visitantes florales. <em>Gayana Botánica</em>. 74(1):82–93</p>
+<div id="ref-rivera-hutinel_biologia_2017">
+<p>63. Rivera-Hutinel A, Acevedo-Orellana F. 2017. Biologia floral y reproductiva de <em>escallonia pulverulenta</em> (ruiz et pav.) pers. (Escalloniaceae) y su relacion con los visitantes florales. <em>Gayana Botanica</em>. 74(1):82–93</p>
 </div>
 <div id="ref-rovere_breeding_2006">
-<p>64. Rovere AE, Smith-Ramírez C, Armesto JJ, Premoli AC. 2006. Breeding system of <em>embothrium coccineum</em> (proteaceae) in two populations on different slopes of the andes. <em>Revista chilena de historia natural</em>. 79(2):</p>
+<p>64. Rovere AE, Smith-Ramirez C, Armesto JJ, Premoli AC. 2006. Breeding system of <em>embothrium coccineum</em> (proteaceae) in two populations on different slopes of the andes. <em>Revista Chilena de Historia Natural</em>. 79(2):</p>
 </div>
 <div id="ref-ruz_bee_2002">
 <p>65. Ruz L. 2002. Bee pollinators introduced to chile: A review. In <em>Pollinating Bees - The Conservation Link Between Agriculture and Nature</em>, pp. 155–67. Brasilia, Brazil: Ministry of Environment. pp. ed.</p>
@@ -1889,34 +1851,34 @@ summary {
 <p>67. Schmid-Hempel R, Eckhardt M, Goulson D, Heinzmann D, Lange C, et al. 2013. The invasion of southern south america by imported bumblebees and associated parasites. <em>Journal of Animal Ecology</em>. 83(4):823–37</p>
 </div>
 <div id="ref-smith-ramirez_razones_2018">
-<p>68. Smith-Ramírez C, Vieli L, Barahona-Segovia RM, Montalva J, Cianferoni F, et al. 2018. Las razones de por qué chile debe detener la importación del abejorro comercial bombus terrestris (linnaeus) y comenzar a controlarlo. <em>Gayana</em>. 8(2):118–27</p>
+<p>68. Smith-Ramirez C, Vieli L, Barahona-Segovia RM, Montalva J, Cianferoni F, et al. 2018. Las razones de por que chile debe detener la importación del abejorro comercial <em>bombus terrestris</em> (linnaeus) y comenzar a controlarlo. <em>Gayana</em>. 8(2):118–27</p>
 </div>
 <div id="ref-smith-ramirez_flowering_1994">
-<p>69. Smith-Ramirez C, Armesto JJ. 1994. Flowering and fruiting patterns in the temperate rainforest of chiloe, chile–ecologies and climatic constraints. <em>The Journal of Ecology</em>. 82(2):353–65</p>
+<p>69. Smith-Ramirez C, Armesto JJ. 1994. Flowering and fruiting patterns in the temperate rainforest of chiloe, chile-ecologies and climatic constraints. <em>The Journal of Ecology</em>. 82(2):353–65</p>
 </div>
-<div id="ref-smith-ramirez_nectarivoriy_1998">
-<p>70. Smith-Ramirez C, Armesto JJ. 1998. Nectarivoría y polinización por aves en <em>embothrium coccineum</em> (proteaceae) en el bosque templado del sur de chile. <em>Revista Chilena de Historia Natural</em>. 71:51–63</p>
+<div id="ref-smith-ramirez_nectarivoria_1998">
+<p>70. Smith-Ramirez C, Armesto JJ. 1998. Nectarivoria y polinizacion por aves en <em>embothrium coccineum</em> (proteaceae) en el bosque templado del sur de chile. <em>Revista Chilena de Historia Natural</em>. 71:51–63</p>
 </div>
 <div id="ref-smith-ramirez_foraging_2003">
-<p>71. Smith-Ramirez C, Armesto JJ. 2003. Foraging behaviour of bird pollinators on embothrium coccineum (proteaceae) trees in forest fragments and pastures in southern chile. <em>Austral Ecology</em>. 28(1):53–60</p>
+<p>71. Smith-Ramirez C, Armesto JJ. 2003. Foraging behaviour of bird pollinators on <em>embothrium coccineum</em> (proteaceae) trees in forest fragments and pastures in southern chile. <em>Austral Ecology</em>. 28(1):53–60</p>
 </div>
 <div id="ref-smith-ramirez_picaflores_1993">
-<p>72. Smith-Ramirez C. 1993. Los picaflores y su recurso floral en el bosque templado de la isla de chiloé, chile. <em>Revista Chilena de Historia Natural</em>. 66:65–73</p>
+<p>72. Smith-Ramirez C. 1993. Los picaflores y su recurso floral en el bosque templado de la isla de chiloe, chile. <em>Revista Chilena de Historia Natural</em>. 66:65–73</p>
 </div>
 <div id="ref-smith-ramirez_flowering_1998">
-<p>73. Smith-Ramırez C, Armesto JJ, Figueroa J. 1998. Flowering, fruiting and seed germination in chilean rain forest myrtaceae: Ecological and phylogenetic constraints. <em>Plant Ecology</em>. 136:119–31</p>
+<p>73. Smith-Ramirez C, Armesto JJ, Figueroa J. 1998. Flowering, fruiting and seed germination in chilean rain forest myrtaceae: Ecological and phylogenetic constraints. <em>Plant Ecology</em>. 136:119–31</p>
 </div>
 <div id="ref-smith-ramirez_diversity_2005">
-<p>74. Smith-Ramírez C, Martinez P, Nuñez M, González C, Armesto JJ. 2005. Diversity, flower visitation frequency and generalism of pollinators in temperate rain forests of chiloé island, chile. <em>Botanical Journal of the Linnean Society</em>. 147(4):399–416</p>
+<p>74. Smith-Ramirez C, Martinez P, Nuñez M, Gonzalez C, Armesto JJ. 2005. Diversity, flower visitation frequency and generalism of pollinators in temperate rain forests of chiloe island, chile. <em>Botanical Journal of the Linnean Society</em>. 147(4):399–416</p>
 </div>
 <div id="ref-smith-ramirez_decadal_2014">
-<p>75. Smith-Ramírez C, Ramos-Jiliberto R, Valdovinos FS, Martínez P, Castillo JA, Armesto JJ. 2014. Decadal trends in the pollinator assemblage of <em>eucryphia cordifolia</em> in chilean rainforests. <em>Oecologia</em>. 176(1):157–69</p>
+<p>75. Smith-Ramirez C, Ramos-Jiliberto R, Valdovinos FS, Martinez P, Castillo JA, Armesto JJ. 2014. Decadal trends in the pollinator assemblage of <em>eucryphia cordifolia</em> in chilean rainforests. <em>Oecologia</em>. 176(1):157–69</p>
 </div>
-<div id="ref-suarez_biologireproductiva_2004">
-<p>76. Suárez LH, González WL, Gianoli E. 2004. Biología reproductiva de <em>convolvulus chilensis</em> (convolvulaceae) en una población de aucó (centro-norte de chile). <em>Revista Chilena de Historia Natural</em>. 77(4):</p>
+<div id="ref-suarez_biologia_2004">
+<p>76. Suarez LH, Gonzalez WL, Gianoli E. 2004. Biologia reproductiva de <em>convolvulus chilensis</em> (convolvulaceae) en una poblacion de auco (centro-norte de chile). <em>Revista Chilena de Historia Natural</em>. 77(4):</p>
 </div>
 <div id="ref-sun_evolution_1996">
-<p>77. Sun BY, Stuessy TF, Humaña AM. 1996. Evolution of <em>rhaphithamnus venustus</em> (verbenaceae), a gynodioecious hummingbird-pollinated endemic of the juan fermindez islands, chile. <em>Pacific Science</em>. 50(1):55–65</p>
+<p>77. Sun BY, Stuessy TF, Humaña AM. 1996. Evolution of <em>rhaphithamnus venustus</em> (verbenaceae), a gynodioecious hummingbird-pollinated endemic of the juan fernandez islands, chile. <em>Pacific Science</em>. 50(1):55–65</p>
 </div>
 <div id="ref-valdivia_noncorrelated_2007">
 <p>78. Valdivia CE, Niemeyer HM. 2007. Noncorrelated evolution between herbivore- and pollinator-linked features in <em>aristolochia chilensis</em> (aristolochiaceae). <em>Biological Journal of the Linnean Society</em>. 91(2):239–45</p>
@@ -1925,7 +1887,7 @@ summary {
 <p>79. Valdivia CE, Niemeyer HM. 2006. Do floral syndromes predict specialisation in plant pollination systems? Assessment of diurnal and nocturnal pollination of <em>escallonia myrtoidea</em>. <em>New Zealand Journal of Botany</em>. 44(2):135–41</p>
 </div>
 <div id="ref-valdivia_additive_2018">
-<p>80. Valdivia CE, Simonetti JA. 2018. The additive effects of pollinators and herbivores on the vine bomarea salsilla (alstroemeriaceae), remain spatially consistent in a fragmented forest. <em>Revista Mexicana de Biodiversidad</em>. 89(4):1100–1106</p>
+<p>80. Valdivia CE, Simonetti JA. 2018. The additive effects of pollinators and herbivores on the vine <em>bomarea salsilla</em> (alstroemeriaceae), remain spatially consistent in a fragmented forest. <em>Revista Mexicana de Biodiversidad</em>. 89(4):1100–1106</p>
 </div>
 <div id="ref-valdivia_geographic_2016">
 <p>81. Valdivia CE, Carroza JP, Orellana JI. 2016. Geographic distribution and trait-mediated causes of nectar robbing by the european bumblebee <em>bombus terrestris</em> on the patagonian shrub <em>fuchsia magellanica</em>. <em>Flora - Morphology, Distribution, Functional Ecology of Plants</em>. 225:30–36</p>
@@ -1943,25 +1905,25 @@ summary {
 <p>85. Willson MF, De Santo TL, Sabag C, Armesto JJ. 1994. Avian communities of fragmented south-temperate rainforests in chile. <em>Conservation Biology</em>. 8(2):508–20</p>
 </div>
 <div id="ref-estay_p_bombus_2007">
-<p>86. Estay P. P. 2007. <em>Bombus en Chile: Especies, biología y manejo</em>. Santiago, Chile: Instituto de Investigaciones Agropecuarias (INIA), Centro Regional de Investigación La Platina, Ministerio de Agricultura. pp. ed.</p>
+<p>86. Estay P. P. 2007. <em>Bombus en Chile: Especies, biologia y manejo</em>. Santiago, Chile: Instituto de Investigaciones Agropecuarias (INIA), Centro Regional de Investigacion La Platina, Ministerio de Agricultura. pp. ed.</p>
 </div>
-<div id="ref-humana_biologireproduccion_1994">
-<p>87. Humaña AM, Riveros M. 1994. Biología de la reproducción en la especie trepadora <em>lapageria rosea</em> r. Et p. (Phileiaceae). <em>Gayana Botánica</em>. 51(2):49–55</p>
+<div id="ref-humana_biologia_1994">
+<p>87. Humaña AM, Riveros M. 1994. Biologia de la reproduccion en la especie trepadora <em>lapageria rosea</em> r. Et p. (Phileiaceae). <em>Gayana Botanica</em>. 51(2):49–55</p>
 </div>
-<div id="ref-monzon_guiabejas_2015">
-<p>88. Monzón V. 2015. <em>Guía de abejas nativas de la Región del Maule</em>. Talca, Chile: Universidad Católica del Maule. pp. ed.</p>
+<div id="ref-monzon_guaa_2015">
+<p>88. Monzon V. 2015. <em>Guaa de abejas nativas de la Region del Maule</em>. Talca, Chile: Universidad Catolica del Maule. pp. ed.</p>
 </div>
 <div id="ref-ortiz-crespo_consideraciones_1986">
 <p>89. Ortiz-Crespo FI. 1986. Consideraciones sobre las migraciones de dos picaflores neotropicales. <em>El Honero</em>. 012(4):298–300</p>
 </div>
 <div id="ref-rozzi_avifauna_1995">
-<p>90. Rozzi R, Martínez D, Wilson MF, Sabag C. 1995. Avifauna de los bosques templados de sudamérica. In <em>Ecología de los Bosques Nativos de Chile</em>, pp. 135–52. Santiago, Chile: Universidad de Chile. pp. ed.</p>
+<p>90. Rozzi R, Martínez D, Wilson MF, Sabag C. 1995. Avifauna de los bosques templados de sudamerica. In <em>Ecologia de los Bosques Nativos de Chile</em>, pp. 135–52. Santiago, Chile: Universidad de Chile. pp. ed.</p>
 </div>
 <div id="ref-rozzi_avifauna_1996">
-<p>91. Rozzi R, Armesto JJ, Correa A, Torres-Mura JC, Salaberry M. 1996. Avifauna de bosques primarios templados en islas deshabitadas del archipiélago de chiloé, chile. <em>Revista Chilena de Historia Natural</em>. 69:125–39</p>
+<p>91. Rozzi R, Armesto JJ, Correa A, Torres-Mura JC, Salaberry M. 1996. Avifauna de bosques primarios templados en islas deshabitadas del archipielago de chiloe, chile. <em>Revista Chilena de Historia Natural</em>. 69:125–39</p>
 </div>
 <div id="ref-skewes_regeneracion_2019">
-<p>92. Skewes JC. 2019. La regeneración del bosque templado, los saberes en tensión y el reconocimiento de la ciudadanía ambiental a partir de la experiencia de los apicultores. <em>Desenvolvimento e Meio Ambiente</em>. 50:73–92</p>
+<p>92. Skewes JC. 2019. La regeneracion del bosque templado, los saberes en tension y el reconocimiento de la ciudadania ambiental a partir de la experiencia de los apicultores. <em>Desenvolvimento e Meio Ambiente</em>. 50:73–92</p>
 </div>
 <div id="ref-arroyo_relationships_1990">
 <p>93. Arroyo MTK, Squeo F. 1990. Relationships between plant breeding systems and pollination. In <em>Biological approaches and evolutionary trends in plants</em>, pp. 205–24. London, UK: Academic Press. pp. ed.</p>
@@ -1976,49 +1938,49 @@ summary {
 <p>96. Seguel I, Riveros M, Lehnebach C, Torres A. 1999. Reproductive and phenological development of <em>ugni molinae</em> turcz. (Myrtaceae). <em>Phyton-International Journal of Experimental Botany</em>. 65:13–21</p>
 </div>
 <div id="ref-smith-ramirez_habitat_2007">
-<p>97. Smith-Ramirez C, Rovere AE, Núñez-Ávila MC, Armesto JJ. 2007. Habitat fragmentation and reproductive ecology of <em>embothrium coccineum, eucryphia cordifolia</em>, and <em>aextoxicon punctatum</em> in southern temperate rainforests. In <em>Biodiversity loss and conservation in fragmented forest landscapes</em>, pp. 102–19. pp. ed.</p>
+<p>97. Smith-Ramirez C, Rovere AE, Nuñez-Avila MC, Armesto JJ. 2007. Habitat fragmentation and reproductive ecology of <em>embothrium coccineum, eucryphia cordifolia</em>, and <em>aextoxicon punctatum</em> in southern temperate rainforests. In <em>Biodiversity loss and conservation in fragmented forest landscapes</em>, pp. 102–19. pp. ed.</p>
 </div>
 <div id="ref-smith-ramirez_historia_2005">
-<p>98. Smith-Ramirez C, Armesto JJ, Valdovinos C. 2005. <em>Historia, biodiversidad y ecología de los bosques costeros de Chile</em>. Santiago, Chile: Editorial Universitaria. pp. First Edition ed.</p>
+<p>98. Smith-Ramirez C, Armesto JJ, Valdovinos C. 2005. <em>Historia, biodiversidad y ecologia de los bosques costeros de Chile</em>. Santiago, Chile: Editorial Universitaria. pp. First Edition ed.</p>
 </div>
-<div id="ref-squeo_comparisson_1987">
-<p>99. Squeo FA. 1987. A comparisson of biotic pollination in 2 mountain transects t the 50-degrees-s, patagonia, chile</p>
+<div id="ref-squeo_comparison_1987">
+<p>99. Squeo FA. 1987. A comparison of biotic pollination in 2 mountain transects t the 50-degrees-s, patagonia, chile</p>
 </div>
 <div id="ref-moldenke_pollination_1979">
 <p>100. Moldenke AL, Moldenke HN. 1979. Pollination ecology as an assay for ecosystemic organization: Convergent evolution in chile and california. <em>Phytologia</em>. 42(1):415–54</p>
 </div>
 <div id="ref-anic_number_2015">
-<p>101. Anic V, Henríquez CA, Abades SR, Bustamante RO. 2015. Number of conspecifics and reproduction in the invasive plant <em>eschscholzia californica</em> (papaveraceae): Is there a pollinator-mediated allee effect? <em>Plant Biology</em>. 17(3):720–27</p>
+<p>101. Anic V, Henriquez CA, Abades SR, Bustamante RO. 2015. Number of conspecifics and reproduction in the invasive plant <em>eschscholzia californica</em> (papaveraceae): Is there a pollinator-mediated allee effect? <em>Plant Biology</em>. 17(3):720–27</p>
 </div>
 <div id="ref-arroyo_community_1985">
 <p>102. Arroyo MTK, Armesto JJ, Primack RB. 1985. Community studies in pollination ecology in the high temperate andes of central chile ii. Effect of temperature on visitation rates and pollination possibilities. <em>Plant Systematics and Evolution</em>. 149(3-4):187–203</p>
 </div>
 <div id="ref-arroyo_erratic_2006">
-<p>103. Arroyo MTK, Muñoz MS, Henríquez C, Till-Bottraud I, Pérez F. 2006. Erratic pollination, high selfing levels and their correlates and consequences in an altitudinally widespread above-tree-line species in the high andes of chile. <em>Acta Oecologica</em>. 30(2):248–57</p>
+<p>103. Arroyo MTK, Muñoz MS, Henriquez C, Till-Bottraud I, Perez F. 2006. Erratic pollination, high selfing levels and their correlates and consequences in an altitudinally widespread above-tree-line species in the high andes of chile. <em>Acta Oecologica</em>. 30(2):248–57</p>
 </div>
 <div id="ref-arroyo_display_2007">
-<p>104. Arroyo MTK, Till-Bottraud I, Torres C, Henríquez CA, Martínez J. 2007. Display size preferences and foraging habits of high andean butterflies pollinating <em>chaetanthera lycopodioides</em> (asteraceae) in the subnival of the central chilean andes. <em>Arctic, Antarctic, and Alpine Research</em>. 39(3):347–52</p>
+<p>104. Arroyo MTK, Till-Bottraud I, Torres C, Henriquez CA, Martinez J. 2007. Display size preferences and foraging habits of high andean butterflies pollinating <em>chaetanthera lycopodioides</em> (asteraceae) in the subnival of the central chilean andes. <em>Arctic, Antarctic, and Alpine Research</em>. 39(3):347–52</p>
 </div>
 <div id="ref-arroyo_incomplete_2012">
-<p>105. Arroyo MTK, Humaña AM, Domínguez D, Jespersen G. 2012. Incomplete trimorphic incompatibility expression in <em>oxalis compacta</em> gill. Ex hook. Et arn. <em>Subsp. Compacta</em> in the central chilean andes. <em>Gayana Botánica</em>. 69(1):88–99</p>
+<p>105. Arroyo MTK, Humaña AM, Dominguez D, Jespersen G. 2012. Incomplete trimorphic incompatibility expression in <em>oxalis compacta</em> gill. Ex hook. Et arn. <em>Subsp. Compacta</em> in the central chilean andes. <em>Gayana Botanica</em>. 69(1):88–99</p>
 </div>
 <div id="ref-arroyo_temperature-driven_2013">
 <p>106. Arroyo MTK, Dudley LS, Jespersen G, Pacheco DA, Cavieres LA. 2013. Temperature-driven flower longevity in a high-alpine species of <em>oxalis</em> influences reproductive assurance. <em>New Phytologist</em>. 200(4):1260–8</p>
 </div>
 <div id="ref-botto-mahan_importance_2000">
-<p>107. Botto-Mahan C, Ojeda-Camacho M. 2000. The importance of floral damage for pollinator visitation in <em>alstroemeria ligtu</em> l.’. <em>Revista Chilena de Entomología</em>. 26:73–76</p>
+<p>107. Botto-Mahan C, Ojeda-Camacho M. 2000. The importance of floral damage for pollinator visitation in <em>alstroemeria ligtu</em> l. <em>Revista Chilena de Entomologia</em>. 26:73–76</p>
 </div>
 <div id="ref-botto-mahan_nectar_2004">
-<p>108. Botto-Mahan C, Pohl N, Medel R. 2004. Nectar guide fluctuating asymmetry does not relate to female fitness in <em>mimulus luteus</em>. <em>Plant Ecology formerly “Vegetatio”</em>. 174(2):347–52</p>
+<p>108. Botto-Mahan C, Pohl N, Medel R. 2004. Nectar guide fluctuating asymmetry does not relate to female fitness in <em>mimulus luteus</em>. <em>Plant Ecology formerly Vegetatio</em>. 174(2):347–52</p>
 </div>
 <div id="ref-botto-mahan_floral_2011">
-<p>109. Botto-Mahan C, Ramírez PA, Ossa CG, Medel R, Ojeda-Camacho M, González AV. 2011. Floral herbivory affects female reproductive success and pollinator visitation in the perennial herb <em>alstroemeria ligtu</em> (alstroemeriaceae). <em>International Journal of Plant Sciences</em>. 172(9):1130–6</p>
+<p>109. Botto-Mahan C, Ramirez PA, Ossa CG, Medel R, Ojeda-Camacho M, Gonzalez AV. 2011. Floral herbivory affects female reproductive success and pollinator visitation in the perennial herb <em>alstroemeria ligtu</em> (alstroemeriaceae). <em>International Journal of Plant Sciences</em>. 172(9):1130–6</p>
 </div>
 <div id="ref-caballero_testing_2013">
-<p>110. Caballero P, Ossa CG, Gonzáles WL, González-Browne C, Astorga G, et al. 2013. Testing non-additive effects of nectar-robbing ants and hummingbird pollination on the reproductive success of a parasitic plant. <em>Plant Ecology</em>. 214(4):633–40</p>
+<p>110. Caballero P, Ossa CG, Gonzales WL, Gonzalez-Browne C, Astorga G, et al. 2013. Testing non-additive effects of nectar-robbing ants and hummingbird pollination on the reproductive success of a parasitic plant. <em>Plant Ecology</em>. 214(4):633–40</p>
 </div>
 <div id="ref-cares-suarez_pollinators_2011">
-<p>111. Cares-Suárez R, Poch T, Acevedo RF, Acosta-Bravo I, Pimentel C, et al. 2011. Do pollinators respond in a dose-dependent manner to flower herbivory?: An experimental assessment in <em>loasa tricolor</em> (loasaceae). <em>Gayana. Botánica</em>. 68(2):176–81</p>
+<p>111. Cares-Suarez R, Poch T, Acevedo RF, Acosta-Bravo I, Pimentel C, et al. 2011. Do pollinators respond in a dose-dependent manner to flower herbivory?: An experimental assessment in <em>loasa tricolor</em> (loasaceae). <em>Gayana. Botanica</em>. 68(2):176–81</p>
 </div>
 <div id="ref-carvallo_modular_2005">
 <p>112. Carvallo GO, Medel R. 2005. The modular structure of the floral phenotype in <em>mimulus luteus var. Luteus</em> (phrymaceae). <em>Revista chilena de historia natural</em>. 78(4):665–72</p>
@@ -2033,31 +1995,31 @@ summary {
 <p>115. Carvallo GO, Medel R, Navarro L. 2013. Assessing the effects of native plants on the pollination of an exotic herb, the blueweed <em>echium vulgare</em> (boraginaceae). <em>Arthropod-Plant Interactions</em>. 7(5):475–84</p>
 </div>
 <div id="ref-celedon-neghme_cost_2007">
-<p>116. Celedón-Neghme C, Gonzáles WL, Gianoli E. 2007. Cost and benefits of attractive floral traits in the annual species <em>madia sativa</em> (asteraceae). <em>Evolutionary Ecology</em>. 21(2):247–57</p>
+<p>116. Celedon-Neghme C, Gonzales WL, Gianoli E. 2007. Cost and benefits of attractive floral traits in the annual species <em>madia sativa</em> (asteraceae). <em>Evolutionary Ecology</em>. 21(2):247–57</p>
 </div>
 <div id="ref-cooley_is_2008">
 <p>117. Cooley AM, Carvallo G, Willis JH. 2008. Is floral diversification associated with pollinator divergence? Flower shape, flower colour and pollinator preference in chilean <em>mimulus</em>. <em>Annals of Botany</em>. 101(5):641–50</p>
 </div>
 <div id="ref-cuartas-dominguez_pollinator-mediated_2010">
-<p>118. Cuartas-Domínguez M, Medel R. 2010. Pollinator-mediated selection and experimental manipulation of the flower phenotype in <em>chloraea bletioides</em>. <em>Functional Ecology</em>. 24(6):1219–27</p>
+<p>118. Cuartas-Dominguez M, Medel R. 2010. Pollinator-mediated selection and experimental manipulation of the flower phenotype in <em>chloraea bletioides</em>. <em>Functional Ecology</em>. 24(6):1219–27</p>
 </div>
 <div id="ref-espinoza_reproductive_2012">
-<p>119. Espinoza CL, Murúa M, Bustamante RO, Marín VH, Medel R. 2012. Reproductive consequences of flower damage in two contrasting habitats: The case of <em>viola portalesia</em> (violaceae) in chile. <em>Revista chilena de historia natural</em>. 85(4):503–11</p>
+<p>119. Espinoza CL, Murua M, Bustamante RO, Marin VH, Medel R. 2012. Reproductive consequences of flower damage in two contrasting habitats: The case of <em>viola portalesia</em> (violaceae) in chile. <em>Revista Chilena de Historia Natural</em>. 85(4):503–11</p>
 </div>
 <div id="ref-esterio_assessing_2013">
-<p>120. Esterio G, Cares-Suárez R, González-Browne C, Salinas P, Carvallo G, Medel R. 2013. Assessing the impact of the invasive buff-tailed bumblebee (<em>bombus terrestris</em>) on the pollination of the native chilean herb <em>mimulus luteus</em>. <em>Arthropod-Plant Interactions</em>. 7(4):467–74</p>
+<p>120. Esterio G, Cares-Suarez R, Gonzalez-Browne C, Salinas P, Carvallo G, Medel R. 2013. Assessing the impact of the invasive buff-tailed bumblebee (<em>bombus terrestris</em>) on the pollination of the native chilean herb <em>mimulus luteus</em>. <em>Arthropod-Plant Interactions</em>. 7(4):467–74</p>
 </div>
 <div id="ref-galetto_relationship_1998">
 <p>121. Galetto L, Bernardello G, Sosa CA. 1998. The relationship between floral nectar composition and visitors in <em>lycium</em> (solanaceae) from argentina and chile: What does it reflect? <em>Flora</em>. 193(3):303–14</p>
 </div>
 <div id="ref-gonzalez_pollen_2010">
-<p>122. González AV, Pérez F. 2010. Pollen limitation and reproductive assurance in the flora of the coastal atacama desert. <em>International Journal of Plant Sciences</em>. 171(6):607–14</p>
+<p>122. Gonzalez AV, Perez F. 2010. Pollen limitation and reproductive assurance in the flora of the coastal atacama desert. <em>International Journal of Plant Sciences</em>. 171(6):607–14</p>
 </div>
 <div id="ref-gonzalez_temporal_2014">
-<p>123. González AV, Murúa M, Ramírez PA. 2014. Temporal and spatial variation of the pollinator assemblages in <em>alstroemeria ligtu</em> (alstroemeriaceae). <em>Revista Chilena de Historia Natural</em>. 87(5):</p>
+<p>123. Gonzalez AV, Murua M, Ramirez PA. 2014. Temporal and spatial variation of the pollinator assemblages in <em>alstroemeria ligtu</em> (alstroemeriaceae). <em>Revista Chilena de Historia Natural</em>. 87:5</p>
 </div>
 <div id="ref-gonzalez_floral_2015">
-<p>124. González AV, Murúa MM, Pérez F. 2015. Floral integration and pollinator diversity in the generalized plant-pollinator system of <em>alstroemeria ligtu</em> (alstroemeriaceae). <em>Evolutionary Ecology</em>. 29(1):63–75</p>
+<p>124. Gonzalez AV, Murua MM, Perez F. 2015. Floral integration and pollinator diversity in the generalized plant-pollinator system of <em>alstroemeria ligtu</em> (alstroemeriaceae). <em>Evolutionary Ecology</em>. 29(1):63–75</p>
 </div>
 <div id="ref-gonzalez-gomez_direct_2005">
 <p>125. Gonzalez-Gomez PL, Valdivia CE. 2005. Direct and indirect effects of nectar robbing on the pollinating behavior of <em>patagona gigas</em> (trochilidae). <em>Biotropica</em>. 37(4):693–96</p>
@@ -2069,7 +2031,7 @@ summary {
 <p>127. Ladd PG, Arroyo MTK. 2009. Comparisons of breeding systems between two sympatric species, <em>nastanthus spathulatus</em> (calyceraceae) and <em>rhodophiala rhodolirion</em> (amaryllidaceae), in the high andes of central chile. <em>Plant Species Biology</em>. 24(1):2–10</p>
 </div>
 <div id="ref-lander_flower_2009">
-<p>128. Lander TA, Harris SA, Boshier DH. 2009. Flower and fruit production and insect pollination of the endangered chilean tree, <em>gomortega keule</em> in native forest, exotic pine plantation and agricultural environments. <em>Revista chilena de historia natural</em>. 82(3):403–12</p>
+<p>128. Lander TA, Harris SA, Boshier DH. 2009. Flower and fruit production and insect pollination of the endangered chilean tree, <em>gomortega keule</em> in native forest, exotic pine plantation and agricultural environments. <em>Revista Chilena de Historia Natural</em>. 82(3):403–12</p>
 </div>
 <div id="ref-lander_fragmented_2010">
 <p>129. Lander TA, Boshier DH, Harris SA. 2010. Fragmented but not isolated: Contribution of single trees, small patches and long-distance pollen flow to genetic connectivity for <em>gomortega keule</em>, an endangered chilean tree. <em>Biological Conservation</em>. 143(11):2583–90</p>
@@ -2090,10 +2052,10 @@ summary {
 <p>134. Medel R, Botto-Mahan C, Kalin-Arroyo M. 2003. Pollinator-mediated selection on the nectar guide phenotype in the andean monkey fower, <em>mimulus luteus</em>. <em>Ecology</em>. 84(7):1721–32</p>
 </div>
 <div id="ref-medel_influence_2007">
-<p>135. Medel R, Valiente A, Botto-Mahan C, Carvallo G, Pérez F, et al. 2007. The influence of insects and hummingbirds on the geographical variation of the flower phenotype in <em>mimulus luteus</em>. <em>Ecography</em>. 30(6):812–18</p>
+<p>135. Medel R, Valiente A, Botto-Mahan C, Carvallo G, Perez F, et al. 2007. The influence of insects and hummingbirds on the geographical variation of the flower phenotype in <em>mimulus luteus</em>. <em>Ecography</em>. 30(6):812–18</p>
 </div>
 <div id="ref-molina-montenegro_effect_2006">
-<p>136. Molina-Montenegro MA, Cavieres LA. 2006. Effect of density and flower size on the reproductive success of <em>nothoscordum graminum</em> (alliaeae). <em>Gayana Botánica</em>. 63(1):93–98</p>
+<p>136. Molina-Montenegro MA, Cavieres LA. 2006. Effect of density and flower size on the reproductive success of <em>nothoscordum graminum</em> (alliaeae). <em>Gayana Botanica</em>. 63(1):93–98</p>
 </div>
 <div id="ref-molina-montenegro_positive_2008">
 <p>137. Molina-Montenegro MA, Badano EI, Cavieres LA. 2008. Positive interactions among plant species for pollinator service: Assessing the “magnet species” concept with invasive species. <em>Oikos</em>. 117(12):1833–9</p>
@@ -2111,37 +2073,37 @@ summary {
 <p>141. Muñoz AA, Celedon-Neghme C, Cavieres LA, Arroyo MTK. 2005. Bottom-up effects of nutrient availability on flower production, pollinator visitation, and seed output in a high-andean shrub. <em>Oecologia</em>. 143(1):126–35</p>
 </div>
 <div id="ref-murua_does_2010">
-<p>142. Murúa M, Espinoza C, Bustamante R, Marín VH, Medel R. 2010. Does human-induced habitat transformation modify pollinator-mediated selection? A case study in <em>viola portalesia</em> (violaceae). <em>Oecologia</em>. 163(1):153–62</p>
+<p>142. Murua M, Espinoza C, Bustamante R, Marin VH, Medel R. 2010. Does human-induced habitat transformation modify pollinator-mediated selection? A case study in <em>viola portalesia</em> (violaceae). <em>Oecologia</em>. 163(1):153–62</p>
 </div>
 <div id="ref-murua_pollination_2014">
-<p>143. Murúa M, Cisterna J, Rosende B. 2014. Pollination ecology and breeding system of two <em>calceolari</em>a species in chile. <em>Revista Chilena de Historia Natural</em>. 87(1):</p>
+<p>143. Murua M, Cisterna J, Rosende B. 2014. Pollination ecology and breeding system of two <em>calceolari</em>a species in chile. <em>Revista Chilena de Historia Natural</em>. 87:1</p>
 </div>
 <div id="ref-ossa_notes_2011">
-<p>144. Ossa CG, Medel R. 2011. Notes on the floral biology and pollination syndrome of <em>echinopsis chiloensis</em> (colla) friedrich &amp; g.d.rowley (cactaceae) in a population of semiarid chile. <em>Gayana Botánica</em>. 68(2):213–19</p>
+<p>144. Ossa CG, Medel R. 2011. Notes on the floral biology and pollination syndrome of <em>echinopsis chiloensis</em> (colla) friedrich &amp; g. D.Rowley (cactaceae) in a population of semiarid chile. <em>Gayana Botanica</em>. 68(2):213–19</p>
 </div>
 <div id="ref-perez_ancestral_2006">
-<p>145. Pérez F, Arroyo MTK, Medel R, Hershkovitz MA. 2006. Ancestral reconstruction of flower morphology and pollination systems in <em>schizanthus</em> (solanaceae). <em>American Journal of Botany</em>. 93(7):1029–38</p>
+<p>145. Perez F, Arroyo MTK, Medel R, Hershkovitz MA. 2006. Ancestral reconstruction of flower morphology and pollination systems in <em>schizanthus</em> (solanaceae). <em>American Journal of Botany</em>. 93(7):1029–38</p>
 </div>
 <div id="ref-perez_phylogenetic_2007">
-<p>146. Pérez F, Arroyo MTK, Medel R. 2007. Phylogenetic analysis of floral integration in <em>schizanthus</em> (solanaceae): Does pollination truly integrate corolla traits? <em>Journal of Evolutionary Biology</em>. 20(5):1730–8</p>
+<p>146. Perez F, Arroyo MTK, Medel R. 2007. Phylogenetic analysis of floral integration in <em>schizanthus</em> (solanaceae): Does pollination truly integrate corolla traits? <em>Journal of Evolutionary Biology</em>. 20(5):1730–8</p>
 </div>
 <div id="ref-perez_evolution_2009">
-<p>147. Pérez F, Arroyo MTK, Armesto JJ. 2009. Evolution of autonomous selfing accompanies increased specialization in the pollination system of <em>schizanthus</em> (solanaceae). <em>American Journal of Botany</em>. 96(6):1168–76</p>
+<p>147. Perez F, Arroyo MTK, Armesto JJ. 2009. Evolution of autonomous selfing accompanies increased specialization in the pollination system of <em>schizanthus</em> (solanaceae). <em>American Journal of Botany</em>. 96(6):1168–76</p>
 </div>
 <div id="ref-perez_discordant_2011">
-<p>148. Pérez F. 2011. Discordant patterns of morphological and genetic divergence in the closely related species <em>schizanthus hookeri</em> and <em>s. Grahamii</em> (solanaceae). <em>Plant Systematics and Evolution</em>. 293(1-4):197–205</p>
+<p>148. Perez F. 2011. Discordant patterns of morphological and genetic divergence in the closely related species <em>schizanthus hookeri</em> and <em>s. Grahamii</em> (solanaceae). <em>Plant Systematics and Evolution</em>. 293(1-4):197–205</p>
 </div>
 <div id="ref-perez_how_2013">
-<p>149. Pérez F, León C, Muñoz T. 2013. How variable is delayed selfing in a fluctuating pollinator environment? A comparison between a delayed selfing and a pollinator-dependent <em>schizanthus</em> species of the high andes. <em>Evolutionary Ecology</em>. 27(5):911–22</p>
+<p>149. Perez F, León C, Muñoz T. 2013. How variable is delayed selfing in a fluctuating pollinator environment? A comparison between a delayed selfing and a pollinator-dependent <em>schizanthus</em> species of the high andes. <em>Evolutionary Ecology</em>. 27(5):911–22</p>
 </div>
 <div id="ref-pohl_nonadditive_2006">
 <p>150. Pohl N, Carvallo GO, Botto-Mahan C, Medel R. 2006. Nonadditive effects of flower damage and hummingbird pollination on the fecundity of <em>mimulus luteus</em>. <em>Oecologia</em>. 149(4):648–55</p>
 </div>
 <div id="ref-ramos-jiliberto_topological_2010">
-<p>151. Ramos-Jiliberto R, Domínguez D, Espinoza C, López G, Valdovinos FS, et al. 2010. Topological change of andean plant–pollinator networks along an altitudinal gradient. <em>Ecological Complexity</em>. 7(1):86–90</p>
+<p>151. Ramos-Jiliberto R, Dominguez D, Espinoza C, Lopez G, Valdovinos FS, et al. 2010. Topological change of andean plant–pollinator networks along an altitudinal gradient. <em>Ecological Complexity</em>. 7(1):86–90</p>
 </div>
 <div id="ref-rivera-hutinel_effects_2012">
-<p>152. Rivera-Hutinel A, Bustamante RO, Marín VH, Medel R. 2012. Effects of sampling completeness on the structure of plant–pollinator networks. <em>Ecology</em>. 93(7):1593–1603</p>
+<p>152. Rivera-Hutinel A, Bustamante RO, Marin VH, Medel R. 2012. Effects of sampling completeness on the structure of plant–pollinator networks. <em>Ecology</em>. 93(7):1593–1603</p>
 </div>
 <div id="ref-rozzi_ecological_1997">
 <p>153. Rozzi R, Arroyo MTK, Armesto JJ. 1997. Ecological factors affecting gene ﬂow between populations of <em>anarthrophyllum cumingii</em> (papilionaceae) growing on equatorial- and polar-facing slopes in the andes of central chile. <em>Plant Ecology</em>. 132:171–79</p>
@@ -2150,16 +2112,16 @@ summary {
 <p>154. Ruz L, Herrera R. 2001. Preliminary observations on foraging activities of <em>bombus dahlbomi</em> and <em>bombus terrestris</em> (hym: Apidae) on native and non-native vegetation in chile. <em>Acta Horticulturae</em>, pp. 165–69</p>
 </div>
 <div id="ref-suarez_foliar_2009">
-<p>155. Suárez LH, Gonzáles WL, Gianoli E. 2009. Foliar damage modifies floral attractiveness to pollinators in <em>alstroemeria exerens</em>. <em>Evolutionary Ecology</em>. 23(4):545–55</p>
+<p>155. Suarez LH, Gonzales WL, Gianoli E. 2009. Foliar damage modifies floral attractiveness to pollinators in <em>alstroemeria exerens</em>. <em>Evolutionary Ecology</em>. 23(4):545–55</p>
 </div>
 <div id="ref-suarez_strong_2011">
-<p>156. Suárez LH, Pérez F, Armesto JJ. 2011. Strong phenotypic variation in floral design and display traits of an annual tarweed in relation to small-scale topographic heterogeneity in semiarid chile. <em>International Journal of Plant Sciences</em>. 172(8):1012–25</p>
+<p>156. Suarez LH, Perez F, Armesto JJ. 2011. Strong phenotypic variation in floral design and display traits of an annual tarweed in relation to small-scale topographic heterogeneity in semiarid chile. <em>International Journal of Plant Sciences</em>. 172(8):1012–25</p>
 </div>
 <div id="ref-torres-diaz_consecuencias_2007">
-<p>157. Torres-Díaz C, Cavieres LA, Muñoz-Ramírez C, Arroyo MTK. 2007. Consecuencias de las variaciones microclimáticas sobre la visita de insectos polinizadores en dos especies de chaetanthera (asteraceae) en los andes de chile central. <em>Revista chilena de historia natural</em>. 80(4):</p>
+<p>157. Torres-Diaz C, Cavieres LA, Muñoz-Ramíiez C, Arroyo MTK. 2007. Consecuencias de las variaciones microclimaticas sobre la visita de insectos polinizadores en dos especies de chaetanthera (asteraceae) en los andes de chile central. <em>Revista Chilena de Historia Natural</em>. 80:4</p>
 </div>
 <div id="ref-torres-diaz_extremely_2011">
-<p>158. Torres-Díaz C, Gómez-González S, Stotz GC, Torres-Morales P, Paredes B, et al. 2011. Extremely long-lived stigmas allow extended cross-pollination ppportunities in a high andean plant. <em>PLoS ONE</em>. 6(5):e19497</p>
+<p>158. Torres-Diaz C, Gomez-Gonzalez S, Stotz GC, Torres-Morales P, Paredes B, et al. 2011. Extremely long-lived stigmas allow extended cross-pollination opportunities in a high andean plant. <em>PLoS ONE</em>. 6(5):e19497</p>
 </div>
 <div id="ref-valdivia_pollinators_2006">
 <p>159. Valdivia CE, Niemeyer HM. 2006. Do pollinators simultaneously select for inflorescence size and amount of floral scents? An experimental assessment on <em>escallonia myrtoidea</em>. <em>Austral Ecology</em>. 31(7):897–903</p>
@@ -2180,7 +2142,7 @@ summary {
 <p>164. Arroyo MTK, Uslar P. 1993. Breeding systems in a temperate mediterranean-type climate montane sclerophyllus forest in central chile. <em>Botanical Journal of the Linnean Society</em>. 111:83–102</p>
 </div>
 <div id="ref-arroyo_community_1982">
-<p>165. Arroyo MTK, Primack RB, Armesto JJ. 1982. Community studies in pollination ecology in the high temperate andes of central chile. I. Pollinaiton mechanisms and individual variation. <em>American Journal of Botany</em>. 69(1):82–97</p>
+<p>165. Arroyo MTK, Primack RB, Armesto JJ. 1982. Community studies in pollination ecology in the high temperate andes of central chile. I. Pollinaton mechanisms and individual variation. <em>American Journal of Botany</em>. 69(1):82–97</p>
 </div>
 <div id="ref-cavieres_efectos_1998">
 <p>166. Cavieres LA, Peñaloza G. AP, Arroyo MTK. 1998. Efectos del tamaño floral y densidad de flores en la visita de insectos polinizadores en <em>alstroemeria pallida</em> graham (amaryllidaceae). <em>Gayana Botanica</em>. 55(1):1–10</p>
@@ -2192,25 +2154,25 @@ summary {
 <p>168. DeUgarte PM. 1991. <em>Pollinating agents and crop yield of buckwheat (<span style="font-style:normal;">Fagopyrum esculentum</span>)</em>. PhD thesis thesis. Universidad Austral de Chile. pp.</p>
 </div>
 <div id="ref-estay_p_produccion_2001">
-<p>169. Estay P. P, Wagner V. A, Escaff G. M. 2001. Producción de abejorros en chile. <em>Tierra Adentro</em>. 37(marzo-abril):14–15</p>
+<p>169. Estay P. P, Wagner V. A, Escaff G. M. 2001. Produccion de abejorros en chile. <em>Tierra Adentro</em>. 37(marzo-abril):14–15</p>
 </div>
 <div id="ref-estay_p_domesticacion_2005">
-<p>170. Estay P. P, Carvajal M. 2005. Domesticación y crianza continua de los abejorros <em>bombus terrestris</em> y <em>bombus dahlbomii</em> en chile</p>
+<p>170. Estay P. P, Carvajal M. 2005. Domesticacion y crianza continua de los abejorros <em>bombus terrestris</em> y <em>bombus dahlbomii</em> en chile</p>
 </div>
 <div id="ref-diaz_tavie_nuevos_2015">
-<p>171. Díaz Tavie J, Vieli L, Montalva J. 2015. Nuevos antecedentes acerca de la presencia de <em>bombus dahlbomii</em> guérin-méneville (hymenoptera: Apidae) en la isla grande de tierra del fuego. <em>Anales del Instituto de la Patagonia</em>. 43(1):171–74</p>
+<p>171. Diaz Tavie J, Vieli L, Montalva J. 2015. Nuevos antecedentes acerca de la presencia de <em>bombus dahlbomii</em> guerin-meneville (hymenoptera: Apidae) en la isla grande de tierra del fuego. <em>Anales del Instituto de la Patagonia</em>. 43(1):171–74</p>
 </div>
 <div id="ref-monzon_discovering_2019">
-<p>172. Monzón VH, Araujo RO, Avendaño P, Garrido R, Mesquita-Neto JN. 2019. Discovering new floral visitors of four chilean endemic orchids. <em>Gayana (Concepción)</em>. 83(2):141–44</p>
+<p>172. Monzon VH, Araujo RO, Avendaño P, Garrido R, Mesquita-Neto JN. 2019. Discovering new floral visitors of four chilean endemic orchids. <em>Gayana (Concepcion)</em>. 83(2):141–44</p>
 </div>
 <div id="ref-godinez-alvarez_pollination_2004">
-<p>173. Godínez-Alvarez H. 2004. Pollination and seed dispersal by lizards: A review. <em>Revista Chilena de Historia Natural</em>. 77(3):569–77</p>
+<p>173. Godinez-Alvarez H. 2004. Pollination and seed dispersal by lizards: A review. <em>Revista Chilena de Historia Natural</em>. 77(3):569–77</p>
 </div>
 <div id="ref-neira_entomofauna_1997">
-<p>174. Neira MA, Lobos S. N, Riveros G. M, Carrillo Ll. R, Pessot Z. R, Muncada B. N. 1997. Entomofauna asociada a flores de frmabueso (<em>rubus ideaeus</em> l., cv meeker) y evaluación de la actividad polinizadora de <em>apis mellifera</em> bajo la influencia de un atrayante feromonal. <em>Revista Chilena de Entomología</em>. 24:37–44</p>
+<p>174. Neira MA, Lobos S. N, Riveros G. M, Carrillo Ll. R, Pessot Z. R, Muncada B. N. 1997. Entomofauna asociada a flores de framabueso (<em>rubus ideaeus</em> l., cv meeker) y evaluacion de la actividad polinizadora de <em>apis mellifera</em> bajo la influencia de un atrayante feromonal. <em>Revista Chilena de Entomología</em>. 24:37–44</p>
 </div>
 <div id="ref-smith-ramirez_decadal_2014-1">
-<p>175. Smith-Ramírez C, Ramos-Jiliberto R, Valdovinos FS, Martínez P, Castillo JA, Armesto JJ. 2014. Decadal trends in the pollinator assemblage of eucryphia cordifolia in chilean rainforests. <em>Oecologia</em>. 176(1):157–69</p>
+<p>175. Smith-Ramirez C, Ramos-Jiliberto R, Valdovinos FS, Martínez P, Castillo JA, Armesto JJ. 2014. Decadal trends in the pollinator assemblage of eucryphia cordifolia in chilean rainforests. <em>Oecologia</em>. 176(1):157–69</p>
 </div>
 </div>
 
