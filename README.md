@@ -1,23 +1,31 @@
 # Pollination catalogue :hibiscus: :honeybee:
 
-## Publication catalogue on pollination for Chile :chile:
+## A comprehensive catalogue of plant – pollinator interactions for Chile :chile:
 
 **A development of the [SURPASS2](https://bee-surpass.org) project**
 
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
+_Giselle Muschett & [Francisco E. Fontúrbel](https://github.com/fonturbel)_
 
-We are proud to present you this publication catalogue that gathers all published papers on pollination (_sensu lato_) in Chile (from XXXX to 2020). This catalogue contains **174 papers** :books: and was produced in the frame of the [SURPASS2 project](https://bee-surpass.org) aiming to have all this information in one place. An important part of this catalogue is based upon Medel et al. (2018) review, published in **Plant Biology** [doi 10.1111/plb.12644](https://doi.org/10.1111/plb.12644).
+[Instituto de Biología](http://biologia.pucv.cl/), Pontificia Universidad Católica de Valparaíso.
+
+
+We are proud to present you this publication catalogue that gathers all published papers on pollination (_sensu lato_) in Chile (from 1982 to 2019). This catalogue contains **120 papers** :books: and was produced in the frame of the [SURPASS2 project](https://bee-surpass.org) aiming to have all this information in one place. An important part of this catalogue is based upon Medel et al. (2018) review, published in **Plant Biology** [doi 10.1111/plb.12644](https://doi.org/10.1111/plb.12644).
 
 ![SURPASS](images/surpass_logo.png)
 
-This repository contains two major files:
+This repository contains three major files:
 
-(1) A spreadsheet with basic information of each paper included in the catalogue :closed_book:
+(1) A .csv with the information compiled from each paper included in the catalogue :closed_book:
 
 (2) A .ris file containing the full references of all papers included in the catalogue :desktop_computer:
 
 (3) A .bib file containing the full references of all papers included in the catalogue :computer:
+
+
+We also include two **R scripts** to start working with the database.
+
 
 This catalogue is related to the **plant-pollinator database** developed by [REBIPP](https://www.rebipp.org.br) :brazil:
 
