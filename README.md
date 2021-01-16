@@ -24,7 +24,7 @@ This repository contains three major files:
 (3) A .bib file containing the full references of all papers included in the catalogue :computer:
 
 
-We also include two **R scripts** to start working with the database, a RMarkdown file to generate a complete bibliography list.
+We also include two **R scripts** to start working with the database, a RMarkdown file to generate a complete bibliography list, and a HTML file containing the the full bibliographic details of the 120 papers included in the catalogue.
 
 
 This catalogue is related to the **plant-pollinator database** developed by [REBIPP](https://www.rebipp.org.br) :brazil:
