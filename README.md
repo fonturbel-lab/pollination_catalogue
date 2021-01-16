@@ -5,7 +5,7 @@
 **A development of the [SURPASS2](https://bee-surpass.org) project**
 
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
-[![DOI](https://zenodo.org/badge/261577192.svg)](https://zenodo.org/badge/latestdoi/261577192)
+[![DOI](https://zenodo.org/badge/193365640.svg)](https://zenodo.org/badge/latestdoi/193365640)
 
 _Giselle Muschett & [Francisco E. Fontúrbel](https://github.com/fonturbel)_
 
