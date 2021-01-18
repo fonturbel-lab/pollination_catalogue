@@ -29,9 +29,10 @@ We also include two **R scripts** to start working with the database, a RMarkdow
 
 This catalogue is related to the **plant-pollinator database** developed by [REBIPP](https://www.rebipp.org.br) :brazil:
 
+
 ## Contributions and future updates
 
-
+In the spirit of collaboration and open science, please feel free to fork this repository
 
 
 ## Terms of use
