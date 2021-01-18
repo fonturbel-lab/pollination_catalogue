@@ -35,7 +35,7 @@ This catalogue is related to the **plant-pollinator database** developed by [REB
 
 ## Contributions and future updates
 
-In the spirit of collaboration and open science, please feel free to fork this repository and submit a pull request if you have new information to add to this database :thumbsup:
+In the spirit of collaboration and open science, please feel free to fork this repository and submit a pull request if you have new information to contribute to this database :thumbsup:
 
 
 ## Terms of use
