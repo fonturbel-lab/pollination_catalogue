@@ -15,6 +15,9 @@ We are proud to present you this publication catalogue that gathers all publishe
 
 ![SURPASS](images/surpass_logo.png)
 
+
+## Contents
+
 This repository contains three major files:
 
 (1) A .csv with the information compiled from each paper included in the catalogue :closed_book:
