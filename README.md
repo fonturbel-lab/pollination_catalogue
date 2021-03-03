@@ -2,7 +2,7 @@
 
 ## A comprehensive catalogue of plant – pollinator interactions for Chile :chile:
 
-**A development of the [SURPASS2](https://bee-surpass.org) project**
+**A development from the [SURPASS2](https://bee-surpass.org) project**
 
 [![DOI](https://zenodo.org/badge/261577192.svg)](https://zenodo.org/badge/latestdoi/261577192) [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active) ![License](https://img.shields.io/badge/License-CC%20BY%2D-SA%204.0-lightgrey.svg)
 
