@@ -37,7 +37,8 @@ This catalogue is related to the **plant-pollinator database** developed by [REB
 
 In the spirit of collaboration and open science, please feel free to fork this repository and submit a pull request if you have new information to contribute to this database :thumbsup:
 
-For more information about the standard used to report plant-pollinator interactions, please click [here](https://github.com/BioComp-USP/rebipp-data-standard)
+For more information about the standard used to report plant-pollinator interactions for this database, please click [here](https://github.com/BioComp-USP/rebipp-data-standard)
+All contributions should use this standard in order to be added to the main database.
 
 
 ## Terms of use
