@@ -1,0 +1,186 @@
+{
+  "@context" : [ "http://www.w3.org/ns/csvw", {
+    "@language" : "en"
+  } ],
+  "rdfs:comment" : [ "inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/" ],
+  "tables" : [ {
+    "@context" : [ "http://www.w3.org/ns/csvw", {
+      "@language" : "en"
+    } ],
+    "rdfs:comment" : [ "inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/" ],
+    "url" : "pollination_catalogue.csv",
+    "dcterms:bibliographicCitation" : "Giselle Muschett & Francisco E. Fontúrbel. 2021. A comprehensive catalogue of plant – pollinator interactions for Chile",
+    "interactionTypeName" : "interactsWith",
+    "interactionTypeId" : "http://purl.obolibrary.org/obo/RO_0002437",
+    "delimiter" : ";",
+    "headerRowCount" : 1,
+    "null" : [ "" ],
+    "tableSchema" : {
+      "columns" : [ {
+        "name" : "dwc:datasetID",
+        "titles" : "dwc:datasetID",
+        "datatype" : "string"
+      }, {
+        "name" : "dc:creator",
+        "titles" : "dc:creator",
+        "datatype" : "string"
+      }, {
+        "name" : "dwc:verbatimEventDate",
+        "titles" : "dwc:verbatimEventDate",
+        "datatype" : "string"
+      }, {
+        "name" : "EML:pubDate",
+        "titles" : "EML:pubDate",
+        "datatype" : "string"
+      }, {
+        "name" : "referenceCitation",
+        "titles" : "dwc:reference",
+        "datatype" : "string"
+      }, {
+        "name" : "dwc:country",
+        "titles" : "dwc:country",
+        "datatype" : "string"
+      }, {
+        "name" : "dwc:stateProvince",
+        "titles" : "dwc:stateProvince",
+        "datatype" : "string"
+      }, {
+        "name" : "dwc:municipality",
+        "titles" : "dwc:municipality",
+        "datatype" : "string"
+      }, {
+        "name" : "dwc:verbatimSite",
+        "titles" : "dwc:verbatimSite",
+        "datatype" : "string"
+      }, {
+        "name" : "decimalLatitude",
+        "titles" : "dwc:decimalLatitude",
+        "datatype" : "string"
+      }, {
+        "name" : "decimalLongitude",
+        "titles" : "dwc:decimalLongitude",
+        "datatype" : "string"
+      }, {
+        "name" : "EML:northBoundingCoordinate",
+        "titles" : "EML:northBoundingCoordinate",
+        "datatype" : "string"
+      }, {
+        "name" : "EML:southBoundingCoordinate",
+        "titles" : "EML:southBoundingCoordinate",
+        "datatype" : "string"
+      }, {
+        "name" : "dwc:verbatimCoordinates",
+        "titles" : "dwc:verbatimCoordinates",
+        "datatype" : "string"
+      }, {
+        "name" : "dwc:minimumElevationInMeters",
+        "titles" : "dwc:minimumElevationInMeters",
+        "datatype" : "string"
+      }, {
+        "name" : "dwc:maxElevationInMeters",
+        "titles" : "dwc:maxElevationInMeters",
+        "datatype" : "string"
+      }, {
+        "name" : "dwc:verbatimElevation",
+        "titles" : "dwc:verbatimElevation",
+        "datatype" : "string"
+      }, {
+        "name" : "dwc:organismQuantityPlants",
+        "titles" : "dwc:organismQuantityPlants",
+        "datatype" : "string"
+      }, {
+        "name" : "sourceTaxonName",
+        "titles" : "dwc:scientificNamePlants",
+        "datatype" : "string"
+      }, {
+        "name" : "sourceTaxonGenus",
+        "titles" : "dwc:genusPlants",
+        "datatype" : "string"
+      }, {
+        "name" : "sourceTaxonFamily",
+        "titles" : "dwc:familyPlants",
+        "datatype" : "string"
+      }, {
+        "name" : "dwc:taxonRemarksPlants",
+        "titles" : "dwc:taxonRemarksPlants",
+        "datatype" : "string"
+      }, {
+        "name" : "dwc:establishmentMeansPlants",
+        "titles" : "dwc:establishmentMeansPlants",
+        "datatype" : "string"
+      }, {
+        "name" : "ppi:habitPlants",
+        "titles" : "ppi:habitPlants",
+        "datatype" : "string"
+      }, {
+        "name" : "ppi:selfIncompatabilityPlants",
+        "titles" : "ppi:selfIncompatabilityPlants",
+        "datatype" : "string"
+      }, {
+        "name" : "dwc:organismQuantityAnimals",
+        "titles" : "dwc:organismQuantityAnimals",
+        "datatype" : "string"
+      }, {
+        "name" : "targetTaxonName",
+        "titles" : "dwc:scientificNameAnimals",
+        "datatype" : "string"
+      }, {
+        "name" : "targetTaxonGenusName",
+        "titles" : "dwc:genusAnimals",
+        "datatype" : "string"
+      }, {
+        "name" : "targetTaxonFamilyName",
+        "titles" : "dwc:familyAnimals",
+        "datatype" : "string"
+      }, {
+        "name" : "targetTaxonSubfamilyName",
+        "titles" : "dwc:subfamilyAnimals",
+        "datatype" : "string"
+      }, {
+        "name" : "targetTaxonOrderName",
+        "titles" : "dwc:orderAnimals",
+        "datatype" : "string"
+      }, {
+        "name" : "dwc:taxonRemarksAnimals",
+        "titles" : "dwc:taxonRemarksAnimals",
+        "datatype" : "string"
+      }, {
+        "name" : "dwc:establishmentMeansAnimals",
+        "titles" : "dwc:establishmentMeansAnimals",
+        "datatype" : "string"
+      }, {
+        "name" : "interactionTypeName",
+        "titles" : "ppi:interactionType",
+        "datatype" : "string"
+      }, {
+        "name" : "sourceBodyPartName",
+        "titles" : "ppi:resourceCollected",
+        "datatype" : "string"
+      }, {
+        "name" : "dwc:samplingProtocol",
+        "titles" : "dwc:samplingProtocol",
+        "datatype" : "string"
+      }, {
+        "name" : "dwc:sampleSizeValue",
+        "titles" : "dwc:sampleSizeValue",
+        "datatype" : "string"
+      }, {
+        "name" : "dwc:samplingSizeUnit",
+        "titles" : "dwc:samplingSizeUnit",
+        "datatype" : "string"
+      }, {
+        "name" : "Objective_of_Article_Chapter",
+        "titles" : "Objective_of_Article_Chapter",
+        "datatype" : "string"
+      }, {
+        "name" : "Type_of_Analyses",
+        "titles" : "Type_of_Analyses",
+        "datatype" : "string"
+      }, {
+        "name" : "Comments",
+        "titles" : "Comments",
+        "datatype" : "string"
+      } ]
+    }
+  } ]
+}

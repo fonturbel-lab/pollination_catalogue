@@ -45,3 +45,10 @@ For more information about the standard used to report plant-pollinator interact
 This information is provided under a **Creative Commons BY-SA license**. Therefore, you may freely use this data catalogue, but you must agree to: (i) give the appropriate credit to the authors by citing this repository and its doi, and (ii) if you transform, remix, or build upon this data, the resulting dataset should be shared under the same license conditions.
 
 ![license](images/license.png)
+
+## Indexing
+
+[![GloBI](http://api.globalbioticinteractions.org/interaction.svg?accordingTo=globi:fonturbel-lab/pollinator_catalogue)](http://globalbioticinteractions.org/?accordingTo=globi:fonturbel-lab/pollinator_catalogue)
+
+This pollination catalogue is configured to be indexed by Global Biotic Interactions (GloBI, https://globalbioticinteractions.org).
+
