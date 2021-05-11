@@ -41,7 +41,7 @@ For more information about the standard used to report plant-pollinator interact
 
 We elaborated this catalogue with funding granted by the Chilean Agency of Research and Development [ANID](https://www.anid.cl) :chile: through the PCI program (grant NE/S011870/01).
 
-![ANID](images/anid.png)
+![ANID](images/anids.png)
 
 
 ## Terms of use
