@@ -37,6 +37,13 @@ In the spirit of collaboration and open science, please feel free to fork this r
 For more information about the standard used to report plant-pollinator interactions for this database, please click [here](https://github.com/BioComp-USP/rebipp-data-standard). All contributions should use this standard in order to be added to the main database.
 
 
+## Funding
+
+We elaborated this catalogue with funding granted by the Chilean Agency of Research and Development [ANID](https://www.anid.cl) :chile: through the PCI program (grant NE/S011870/01).
+
+![ANID](images/anid.png)
+
+
 ## Terms of use
 
 This information is provided under a **Creative Commons BY-SA license**. Therefore, you may freely use this data catalogue, but you must agree to: (i) give the appropriate credit to the authors by citing this repository and its doi, and (ii) if you transform, remix, or build upon this data, the resulting dataset should be shared under the same license conditions.
