@@ -11,9 +11,7 @@ _Giselle Muschett & [Francisco E. Fontúrbel](https://github.com/fonturbel)_
 [Instituto de Biología](http://biologia.pucv.cl/), Pontificia Universidad Católica de Valparaíso.
 
 
-We are proud to present you this publication catalogue that gathers all published papers on pollination (_sensu lato_) in Chile (from 1982 to 2019). This catalogue contains **120 papers** :books: and was produced in the frame of the [SURPASS2 project](https://bee-surpass.org) aiming to have all this information in one place. An important part of this catalogue is based upon Medel et al. (2018) review, published in **Plant Biology** [doi 10.1111/plb.12644](https://doi.org/10.1111/plb.12644).
-
-![SURPASS](images/surpass_logo.png)
+We are proud to present you this publication catalogue that gathers all published papers on pollination (_sensu lato_) in Chile (from 1982 to 2019). This catalogue contains **120 papers** :books: and was produced in the frame of the ANID/PCI **NE/S011870/01** project aiming to have all this information in one place. An important part of this catalogue is based upon Medel et al. (2018) review, published in **Plant Biology** [doi 10.1111/plb.12644](https://doi.org/10.1111/plb.12644).
 
 
 ## Contents
