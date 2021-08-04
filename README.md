@@ -50,7 +50,7 @@ This information is provided under a **Creative Commons BY-SA license**. Therefo
 
 ## Indexing
 
-[![GloBI](http://api.globalbioticinteractions.org/interaction.svg?accordingTo=globi:fonturbel-lab/pollinator_catalogue)](http://globalbioticinteractions.org/?accordingTo=globi:fonturbel-lab/pollinator_catalogue)
+[![GloBI](http://api.globalbioticinteractions.org/interaction.svg?accordingTo=globi:fonturbel-lab/pollination_catalogue)](http://globalbioticinteractions.org/?accordingTo=globi:fonturbel-lab/pollination_catalogue)
 
 This pollination catalogue is configured to be indexed by Global Biotic Interactions (GloBI, https://globalbioticinteractions.org).
 
