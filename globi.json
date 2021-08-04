@@ -8,7 +8,7 @@
       "@language" : "en"
     } ],
     "rdfs:comment" : [ "inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/" ],
-    "url" : "file:///home/jorrit/proj/globi/data/pollination_catalogue/pollination_catalogue.csv",
+    "url" : "pollination_catalogue/pollination_catalogue.csv",
     "dcterms:bibliographicCitation" : "Giselle Muschett & Francisco E. Fontúrbel. 2021. A comprehensive catalogue of plant – pollinator interactions for Chile",
     "delimiter" : ";",
     "headerRowCount" : 1,
