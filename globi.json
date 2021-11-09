@@ -17,168 +17,196 @@
     "null" : [ "" ],
     "tableSchema" : {
       "columns" : [ {
-        "name" : "dwc:datasetID",
-        "titles" : "dwc:datasetID",
+        "name" : "﻿datasetID",
+        "titles" : "﻿datasetID",
         "datatype" : "string"
       }, {
-        "name" : "dc:creator",
-        "titles" : "dc:creator",
+        "name" : "creator",
+        "titles" : "creator",
         "datatype" : "string"
       }, {
-        "name" : "dwc:verbatimEventDate",
-        "titles" : "dwc:verbatimEventDate",
+        "name" : "http://rs.tdwg.org/dwc/terms/eventDate",
+        "titles" : "eventDate",
         "datatype" : "string"
       }, {
-        "name" : "EML:pubDate",
-        "titles" : "EML:pubDate",
+        "name" : "pubDate",
+        "titles" : "pubDate",
         "datatype" : "string"
       }, {
         "name" : "referenceCitation",
-        "titles" : "dwc:reference",
+        "titles" : "reference",
         "datatype" : "string"
       }, {
-        "name" : "dwc:country",
-        "titles" : "dwc:country",
+        "name" : "country",
+        "titles" : "country",
         "datatype" : "string"
       }, {
-        "name" : "dwc:stateProvince",
-        "titles" : "dwc:stateProvince",
+        "name" : "stateProvince",
+        "titles" : "stateProvince",
         "datatype" : "string"
       }, {
-        "name" : "dwc:municipality",
-        "titles" : "dwc:municipality",
+        "name" : "municipality",
+        "titles" : "municipality",
         "datatype" : "string"
       }, {
-        "name" : "dwc:verbatimSite",
-        "titles" : "dwc:verbatimSite",
+        "name" : "verbatimSite",
+        "titles" : "verbatimSite",
         "datatype" : "string"
       }, {
         "name" : "decimalLatitude",
-        "titles" : "dwc:decimalLatitude",
+        "titles" : "decimalLatitude",
         "datatype" : "string"
       }, {
         "name" : "decimalLongitude",
-        "titles" : "dwc:decimalLongitude",
+        "titles" : "decimalLongitude",
         "datatype" : "string"
       }, {
-        "name" : "EML:northBoundingCoordinate",
-        "titles" : "EML:northBoundingCoordinate",
+        "name" : "northBoundingCoordinate",
+        "titles" : "northBoundingCoordinate",
         "datatype" : "string"
       }, {
-        "name" : "EML:southBoundingCoordinate",
-        "titles" : "EML:southBoundingCoordinate",
+        "name" : "southBoundingCoordinate",
+        "titles" : "southBoundingCoordinate",
         "datatype" : "string"
       }, {
-        "name" : "dwc:verbatimCoordinates",
-        "titles" : "dwc:verbatimCoordinates",
+        "name" : "verbatimCoordinates",
+        "titles" : "verbatimCoordinates",
         "datatype" : "string"
       }, {
-        "name" : "dwc:minimumElevationInMeters",
-        "titles" : "dwc:minimumElevationInMeters",
+        "name" : "minimumElevationInMeters",
+        "titles" : "minimumElevationInMeters",
         "datatype" : "string"
       }, {
-        "name" : "dwc:maxElevationInMeters",
-        "titles" : "dwc:maxElevationInMeters",
+        "name" : "maxElevationInMeters",
+        "titles" : "maxElevationInMeters",
         "datatype" : "string"
       }, {
-        "name" : "dwc:verbatimElevation",
-        "titles" : "dwc:verbatimElevation",
+        "name" : "verbatimElevation",
+        "titles" : "verbatimElevation",
         "datatype" : "string"
       }, {
-        "name" : "dwc:organismQuantityPlants",
-        "titles" : "dwc:organismQuantityPlants",
+        "name" : "organismQuantityPlants",
+        "titles" : "organismQuantityPlants",
+        "datatype" : "string"
+      }, {
+        "name" : "identificationQualifierPlants",
+        "titles" : "identificationQualifierPlants",
         "datatype" : "string"
       }, {
         "name" : "sourceTaxonName",
-        "titles" : "dwc:scientificNamePlants",
+        "titles" : "scientificNamePlants",
         "datatype" : "string"
       }, {
-        "name" : "sourceTaxonGenus",
-        "titles" : "dwc:genusPlants",
+        "name" : "sourceTaxonClassName",
+        "titles" : "classPlants",
         "datatype" : "string"
       }, {
-        "name" : "sourceTaxonFamily",
-        "titles" : "dwc:familyPlants",
+        "name" : "sourceTaxonFamilyName",
+        "titles" : "familyPlants",
         "datatype" : "string"
       }, {
-        "name" : "dwc:taxonRemarksPlants",
-        "titles" : "dwc:taxonRemarksPlants",
+        "name" : "sourceTaxonGenusName",
+        "titles" : "genusPlants",
         "datatype" : "string"
       }, {
-        "name" : "dwc:establishmentMeansPlants",
-        "titles" : "dwc:establishmentMeansPlants",
+        "name" : "sourceTaxonSpecificEpithetName",
+        "titles" : "specificEpithetPlants",
         "datatype" : "string"
       }, {
-        "name" : "ppi:habitPlants",
-        "titles" : "ppi:habitPlants",
+        "name" : "sourceTaxonInfraspecificEpithetName",
+        "titles" : "infraspecificEpithetPlants",
         "datatype" : "string"
       }, {
-        "name" : "ppi:selfIncompatabilityPlants",
-        "titles" : "ppi:selfIncompatabilityPlants",
+        "name" : "sourceTaxonRank",
+        "titles" : "taxonRankPlants",
         "datatype" : "string"
       }, {
-        "name" : "dwc:organismQuantityAnimals",
-        "titles" : "dwc:organismQuantityAnimals",
+        "name" : "taxonRemarksPlants",
+        "titles" : "taxonRemarksPlants",
+        "datatype" : "string"
+      }, {
+        "name" : "establishmentMeansPlants",
+        "titles" : "establishmentMeansPlants",
+        "datatype" : "string"
+      }, {
+        "name" : "habitPlants",
+        "titles" : "habitPlants",
+        "datatype" : "string"
+      }, {
+        "name" : "selfIncompatabilityPlants",
+        "titles" : "selfIncompatabilityPlants",
+        "datatype" : "string"
+      }, {
+        "name" : "organismQuantityAnimals",
+        "titles" : "organismQuantityAnimals",
+        "datatype" : "string"
+      }, {
+        "name" : "identificationQualifierAnimals",
+        "titles" : "identificationQualifierAnimals",
         "datatype" : "string"
       }, {
         "name" : "targetTaxonName",
-        "titles" : "dwc:scientificNameAnimals",
+        "titles" : "scientificNameAnimals",
         "datatype" : "string"
       }, {
-        "name" : "targetTaxonGenusName",
-        "titles" : "dwc:genusAnimals",
-        "datatype" : "string"
-      }, {
-        "name" : "targetTaxonFamilyName",
-        "titles" : "dwc:familyAnimals",
-        "datatype" : "string"
-      }, {
-        "name" : "targetTaxonSubfamilyName",
-        "titles" : "dwc:subfamilyAnimals",
+        "name" : "targetTaxonClassName",
+        "titles" : "classAnimals",
         "datatype" : "string"
       }, {
         "name" : "targetTaxonOrderName",
-        "titles" : "dwc:orderAnimals",
+        "titles" : "orderAnimals",
         "datatype" : "string"
       }, {
-        "name" : "dwc:taxonRemarksAnimals",
-        "titles" : "dwc:taxonRemarksAnimals",
+        "name" : "targetTaxonFamilyName",
+        "titles" : "familyAnimals",
         "datatype" : "string"
       }, {
-        "name" : "dwc:establishmentMeansAnimals",
-        "titles" : "dwc:establishmentMeansAnimals",
+        "name" : "targetTaxonSubfamilyName",
+        "titles" : "subfamilyAnimals",
+        "datatype" : "string"
+      }, {
+        "name" : "targetTaxonGenusName",
+        "titles" : "genusAnimals",
+        "datatype" : "string"
+      }, {
+        "name" : "targetTaxonSpecificEpithetName",
+        "titles" : "specificEpithetAnimals",
+        "datatype" : "string"
+      }, {
+        "name" : "targetTaxonRank",
+        "titles" : "taxonRankAnimals",
+        "datatype" : "string"
+      }, {
+        "name" : "taxonRemarksAnimals",
+        "titles" : "taxonRemarksAnimals",
+        "datatype" : "string"
+      }, {
+        "name" : "establishmentMeansAnimals",
+        "titles" : "establishmentMeansAnimals",
         "datatype" : "string"
       }, {
         "name" : "interactionTypeName",
-        "titles" : "ppi:interactionType",
+        "titles" : "interactionType",
+        "datatype" : "string"
+      }, {
+        "name" : "interactionTypeId",
+        "titles" : "interactionTypeIRI",
         "datatype" : "string"
       }, {
         "name" : "sourceBodyPartName",
-        "titles" : "ppi:resourceCollected",
+        "titles" : "resourceCollected",
         "datatype" : "string"
       }, {
-        "name" : "dwc:samplingProtocol",
-        "titles" : "dwc:samplingProtocol",
+        "name" : "samplingProtocol",
+        "titles" : "samplingProtocol",
         "datatype" : "string"
       }, {
-        "name" : "dwc:sampleSizeValue",
-        "titles" : "dwc:sampleSizeValue",
+        "name" : "sampleSizeValue",
+        "titles" : "sampleSizeValue",
         "datatype" : "string"
       }, {
-        "name" : "dwc:samplingSizeUnit",
-        "titles" : "dwc:samplingSizeUnit",
-        "datatype" : "string"
-      }, {
-        "name" : "Objective_of_Article_Chapter",
-        "titles" : "Objective_of_Article_Chapter",
-        "datatype" : "string"
-      }, {
-        "name" : "Type_of_Analyses",
-        "titles" : "Type_of_Analyses",
-        "datatype" : "string"
-      }, {
-        "name" : "Comments",
-        "titles" : "Comments",
+        "name" : "samplingSizeUnit",
+        "titles" : "samplingSizeUnit",
         "datatype" : "string"
       } ]
     }
