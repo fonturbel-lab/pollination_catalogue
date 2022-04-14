@@ -12,7 +12,9 @@ _Giselle Muschett & [Francisco E. Fontúrbel](https://github.com/fonturbel)_
 
 We are proud to present you this publication catalogue that gathers all published papers on pollination (_sensu lato_) in Chile (from 1982 to 2019). This catalogue contains **120 papers** :books: and was produced in the frame of the ANID/PCI **NE/S011870/01** project aiming to have all this information in one place. An important part of this catalogue is based upon Medel et al. (2018) review, published in **Plant Biology** [doi 10.1111/plb.12644](https://doi.org/10.1111/plb.12644).
 
-The associated paper to this catalogue, explaining in detail its content and structure, was published in Scientific Data and it can be accessed [HERE](https://www.nature.com/articles/s41597-022-01195-8) :gem:
+The associated paper to this catalogue, explaining in detail its content and structure, was published in Scientific Data and it can be accessed [HERE](https://www.nature.com/articles/s41597-022-01195-8) :page_facing_up:
+
+When using this information, please cite both the repository and the Scientific Data paper :wink:
 
 
 ## Contents
